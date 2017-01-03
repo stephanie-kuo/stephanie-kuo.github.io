@@ -301,9 +301,12 @@ footer {
       margin: 0 auto; }
 
   .main {
-    padding-top: 80%; }
+    padding-top: 35vh; }
 
   h4 {
+    font-size: 3.5vh; }
+
+  .text h3 {
     font-size: 3.5vh; }
 
   .btn {
@@ -323,7 +326,22 @@ footer {
     padding: 20%; }
 
   .title h3 {
-    height: 3.5vh; } }
+    height: 3.5vh; }
+
+  .about .text {
+    wdith: 80%;
+    padding: 10%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white; }
+    .about .text h1 {
+      font-size: 4vh; }
+    .about .text h3 {
+      font-size: 3vh;
+      color: #FFDE7D; }
+    .about .text h4 {
+      font-size: 3vh; }
+    .about .text p {
+      font-size: 2.5vh; } }
 body {
   background-color: #333333;
   color: #333333; }
@@ -473,7 +491,7 @@ body {
     .social .icons a {
       padding: 1%; }
 
-.timeline {
+.timeline_pic {
   display: none; }
 
 @media screen and (max-width: 991px) {
