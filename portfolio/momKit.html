@@ -1,0 +1,332 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MomKit | Project</title>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <!--css-->
+    <link rel="stylesheet" href="style/momkit.css">
+    <link rel="stylesheet" href="style/animate.css" />
+    <!--js-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs
+/jquery/1.4.0/jquery.min.js"></script>
+    <script type='text/javascript' src='js/effect.js'></script>
+    <script type='text/javascript' src="js/viewportchecker.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class=" navbar-header navbar-fixed-top" role="navigation">
+            <ul class="nav navbar-nav ">
+                <li class="pull-left"><a href="index.html#momKit"><span class="glyphicon glyphicon-chevron-left"></span>Back to Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="col-md-12 col-sm-12 jumbotron momkit">
+        <div class="momkit_logo">
+            <img src="assets/momkit_logo.png" alt="">
+        </div>
+        <div class="momkit_mockup">
+            <img src="assets/momkit_mockup3.png" alt="">
+        </div>
+
+    </div>
+    <div class="project_intro">
+        <div class="title center">
+            <h3>What is MomKit</h3>
+        </div>
+        <div class="content">
+            <p>MomKit is a mobile health app that teaches parents evidence-based breastfeeding techniques with Pixar-style animations. With MomKit, mothers can learn how to alleviate, improve, or prevent the most common breastfeeding problems, from breast pain and engorgement to low milk production and trouble pumping.</p>
+        </div>
+    </div>
+    <div class="design_process">
+        <div class="title center">
+            <h3>Design Process</h3>
+        </div>
+        <div class="content">
+            <div class="timeline">
+                <ol>
+                    <li>User Interview</li>
+                    <li>Persona</li>
+                    <li>Workflow</li>
+                    <li>Wireframe</li>
+                    <li>Prototype</li>
+                    <li>User Testing</li>
+                </ol>
+            </div>
+            <div class="timeline_pic">
+                <img src="assets/momkit_timeline.png" alt=" " style="width: 100%;">
+            </div>
+            <p>For our client, we worked on 2 different features of their application over the course of 4 months. <br><br>1. The Breastfeeding Dictionary feature is integrated into the application and allows mothers to learn more about their body and biology via lactation term definitions at a 6th grade reading level and animated physiology tutorials. <br><br>2. The Goal Setting Workflow needs to be developed so that LGC can answer the question: “How do mothers set goals for themselves while using the application?” An example of a goal is: “I want to breastfeed my baby for 6 months.”</p>
+        </div>
+    </div>
+    <div class="interview ">
+        <div class="title center ">
+            <h3>User Interview</h3>
+        </div>
+        <div class="content ">
+            <p>Some mothers do get support for breastfeeding in terms of a lactation consultant or a nurse who comes home for the first week after their delivery, but that isn’t the case with all mothers. <br> When we interviewed mothers and asked them about their breastfeeding experience, here is what they said: </p>
+            <div class="bubble ">
+                <div class="talktext ">
+                    <p>I was reading a book when I was pregnant, but when I actually had the baby I didn’t really know how to breastfeed him.</p>
+                </div>
+            </div>
+            <div class="bubble ">
+                <div class="talktext ">
+                    <p>I Googled some of my problems, but was not sure if the sources of information are credible and could be trusted.</p>
+                </div>
+            </div>
+            <div class="bubble ">
+                <div class="talktext ">
+                    <p>My biggest problem was, it doesn’t come naturally...</p>
+                </div>
+            </div>
+            <div class="bubble ">
+                <div class="talktext ">
+                    <p>I feel that there should be someone to tell you, that facing roadblocks while breastfeeding is normal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="persona ">
+        <div class="title center ">
+            <h3>Persona</h3>
+            <p>The target users are recent mothers or pregnant women who would soon be mothers. </p>
+        </div>
+        <div class="content col-sm-12 ">
+            <div class="card col-md-5 col-sm-12 ">
+                <img src="assets/momkit_persona1.png " alt=" ">
+                <div class="text">
+                    <h4>Miranda</h4>
+                    <p>Age: 27</p>
+                    <p>First time mom</p>
+                    <p>Week since birth: 2 weeks</p>
+                    <p>Feeding style: mix / formula and breastmilk</p>
+                    <p>Has supportive family but no partner</p>
+                </div>
+                <div class="text">
+                    <h4>Frustrations / Concern</h4>
+                    <ul>
+                        <li>Has no education on breastfeeding</li>
+                        <li>Tried breastfeeding exclusively for 1 week but experienced too much pain to continue</li>
+                        <li>Feels demotivated to continue breastfeeding / Has been formula-feeding baby for last week</li>
+                        <li>Worried her baby will not recognize her nipple if she tries breastfeeding again</li>
+                        <li>Worried about pumping at work and facing social stigma</li>
+                    </ul>
+                    <h4>Goals</h4>
+                    <ul>
+                        <li>Goes back work in 4 weeks</li>
+                        <li>Breastfeed exclusively for 6 months</li>
+                    </ul>
+                    <h4>Tasks</h4>
+                    <ul>
+                        <li>Needs solution for breast pain</li>
+                        <li>Learns more about nipple soreness, nipple confusion</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card col-md-5 col-sm-12 ">
+                <img src="assets/momkit_persona2.png " alt=" ">
+                <div class="text ">
+                    <h4>Jordan</h4>
+                    <p>Age: 30</p>
+                    <p>Week since birth: 0 weeks</p>
+                    <p>Feeding style: formula feeding</p>
+                    <h4>About</h4>
+                    <ul>
+                        <li>Has a 5-year old child who was formula fed</li>
+                        <li>Would like to try breast feeding with new baby</li>
+                        <li>Works full-time and is not sure how she will breastfeeding / pumping into her schedule</li>
+                        <li>Unsupportive mom but her partner is supportive</li>
+                        <li>Wants to incorporate breastfeeding but will most likely rely on formula to some extent</li>
+                    </ul>
+                </div>
+                <div class="text ">
+                    <h4>Frustrations / Concern</h4>
+                    <ul>
+                        <li>Not sure where to pump at work</li>
+                        <li>How to communicate with her boss</li>
+                        <li>Needs help learning breastfeeding techniques</li>
+                        <li>Difficult to get pumping equipment and bottles</li>
+                    </ul>
+                    <h4>Goals</h4>
+                    <ul>
+                        <li>Brestfeed her new baby</li>
+                        <li>Breastfeed as often as possible for as long as possible</li>
+                    </ul>
+                    <h4>Tasks</h4>
+                    <ul>
+                        <li>Learn breastfeeding techniques</li>
+                        <li>Find out where to pump at work</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card col-md-5 col-sm-12 ">
+                <img src="assets/momkit_persona3.png " alt=" ">
+                <div class="text ">
+                    <h4>Joyce</h4>
+                    <p>Age: 39</p>
+                    <p>Week since birth: 7 weeks</p>
+                    <p>Feeding style: breastfeeding exclusively</p>
+                    <h4>About</h4>
+                    <ul>
+                        <li>Has an 8-year old child who was already breastfed</li>
+                        <li>Is a stay-at-home style mom since birth of twins and would like to continue until they are in primary school</li>
+                        <li>Buys milk from other moms on-line</li>
+                        <li>Has partner who is not very supportive or involved in breastfeeding</li>
+                    </ul>
+                </div>
+                <div class="text ">
+                    <h4>Frustrations / Concern</h4>
+                    <ul>
+                        <li>Struggling with her milk production and worried about not producing enough for both babies</li>
+                        <li>May be developing postnatal depression because of her struggles</li>
+                        <li>Doesn't have people to support her breastfeeding</li>
+                    </ul>
+                    <h4>Goals</h4>
+                    <ul>
+                        <li>Continue breastfeeding exclusively for 5 months</li>
+                    </ul>
+                    <h4>Tasks</h4>
+                    <ul>
+                        <li>Learn more about milk production</li>
+                        <li>Learn breastfeeding message techniques</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card col-md-5 col-sm-12 ">
+                <img src="assets/momkit_persona4.png " alt=" ">
+                <div class="text ">
+                    <h4>Lisa</h4>
+                    <p>Age: 24</p>
+                    <p>Week since birth: 6-month pregnant</p>
+                    <p>First time mom</p>
+                    <h4>About</h4>
+                    <ul>
+                        <li>Is nervous about breastfeeding</li>
+                        <li>Feel breastfeeding was going to be uncomfortable</li>
+                        <li>Doesn't know whom to talk and share her feelings with besides her husband</li>
+                    </ul>
+                </div>
+                <div class="text ">
+                    <h4>Frustrations / Concern</h4>
+                    <ul>
+                        <li>Questioning whether going to have enough milk for her son</li>
+                        <li>Doesn't know how to breastfeed at all</li>
+                        <li>Read some articles that engorgement is going to be painful</li>
+                        <li>Pressure from her husband's expectation</li>
+                    </ul>
+                    <h4>Goals</h4>
+                    <ul>
+                        <li>Succcessfully breastfeed her son after giving birth</li>
+                        <li>Reach a consensus with her husband on breastfeeding</li>
+                        <li>Go back to work three months after the delivery</li>
+                    </ul>
+                    <h4>Tasks</h4>
+                    <ul>
+                        <li>Learn more about breastfeeding before giving birth</li>
+                        <li>Learn more about the benefits of breastfeeding</li>
+                        <li>Find someone to consult and talk to</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flow " id="flow ">
+        <div class="title center ">
+            <h3>Workflow</h3>
+        </div>
+        <div class="content ">
+            <p>We initially laid out the the workflow of the application in a flowchart to understand the design better,<br> since the designer in the corporation had designed it. </p>
+            <img src="assets/momkit_workflow.png " alt=" ">
+        </div>
+    </div>
+
+    <div class="part " id="dictionary">
+        <div class="title center ">
+            <h3>Function 1 - Dictionary</h3>
+        </div>
+        <div class="content ">
+            <p>The Breastfeeding Dictionary feature is integrated into the application and allows mothers to learn more about their body and biology via lactation term definitions at a 6th grade reading level and animated physiology tutorials. </p>
+            <p>The features we thought would be useful in this scenario were: <br><br>A main search bar <br> Option to go back to recent searches<br> Filter feature to look at words that lie under the same theme
+            </p>
+            <h3>Wireframe</h3>
+
+            <img src="assets/momkit_wireframe2.png " alt=" ">
+            <p>During our design critique session with the team, we discussed what other features could be included that would be useful in this case. We thought Favoriting a word could be an option, which could work like “Save later”. Also, we thought a popular searches tab would be useful where users could check what other users are looking for. </p>
+            <p>We also discussed the possibility of designing a feature that would allow mothers to share their problems and solutions with other mothers within the app. For example, suppose a mother found a word/massaging technique useful and thought it could be useful to her friend too, she should be able to share it through the application. Hence we decided to provide a “Share” option. </p>
+            <h3>Mid-Fi Prototype</h3>
+            <img src="assets/momkit_prototype2.png " alt=" ">
+            <h3>Interactive Prototype</h3>
+            <iframe src="https://marvelapp.com/31fg3h1?emb=1 " width="452 " height="901 " allowTransparency="true " frameborder="0 "></iframe>
+            <h3>User Testing</h3>
+            <h4>Task</h4>
+            <p>Searching for a word<br> Sharing the word and related massage techniques<br> Filtering terms<br> Looking for favorited terms<br>
+            </p>
+            <h4>Findings</h4>
+            <p>A. Filter Function<br><br>When asked to search for all terms related to “First latch” the user did not think of filtering. Also, the filter icon wasn’t prominent enough to catch their attention. When told about the filter function, she immediately said “the filter feature totally makes sense to me”.</p>
+            <div class="bubble ">
+                <div class="talktext ">
+                    <p>The filter feature totally makes sense to me.</p>
+                </div>
+
+            </div>
+            <div class="bubble ">
+                <div class="talktext ">
+                    <p>If a mother doesn’t know what exact word to look for, but knows what the word is related to, the filter function is really useful.</p>
+                </div>
+            </div>
+            <p>
+                B. Share Function<br><br>An interesting question came up in one of the user tests when we asked the user to share the word with a friend. The user asked, “What happens if I share a word/related massage technique with a friend who doesn’t have this app?” And this is something that we brought up to the LiquidGoldConcept team to think about. Since the app is going to be purchased through hospitals and clinics and will not be available on the app store, there has to be a way for users to share information or buy the app if they don’t have it.
+            </p>
+            <div class="bubble ">
+                <div class="talktext ">
+                    <p>What happens if I share a word/related massage technique with a friend who doesn’t have this app?</p>
+                </div>
+            </div>
+            <p></p>
+            <h4>Recommendations</h4>
+            <p>We made 3 design recommendations for making the filter function more prominent and obvious to the user:</p>
+            <div class="text ">
+                <p>1. Explicitly saying “Filter” rather than putting an icon on the interface.</p>
+                <img src="assets/momkit_solution1.png " alt=" ">
+
+            </div>
+
+            <div class="text ">
+                <p>2. A drop down filter function when the user clicks on the search bar</p>
+                <img src="assets/LGC_dictionary_filter.gif " alt=" ">
+            </div>
+
+            <div class="text ">
+                <p>3. Use tiles of different filter themes rather than a list of words</p>
+                <img src="assets/momkit_solution2.jpg " alt=" ">
+            </div>
+            <p>We suggested that the LGC team could use the same user testing script we used for user testing to test these designs, and make a decision as to which one is most intuitive. </p>
+        </div>
+    </div>
+    <div class="part " id="goal_setting ">
+        <div class="title center ">
+            <h3>Function 2 - Goal Setting</h3>
+        </div>
+        <div class="content ">
+            <p>The "Goal Setting " function can help moms better understand their current status and be more willing to explore and use the application. Also, the user can customize some aspects of the goal for example the time period of the goal. </p>
+            <h3>Wireframe</h3>
+            <img src="assets/momkit_wireframe1.jpg " alt=" ">
+            <h3>Prototype</h3>
+            <img src="assets/momkit_prototype1.png " alt=" ">
+            <h3>Interactive Prototype</h3>
+            <iframe src="https://marvelapp.com/4ej616j?emb=1 " width="100% " height="100% " allowTransparency="true " frameborder="0 "></iframe>
+            <h3>User Testing</h3>
+            <p>We created a user testing script for the goal framing workflow, and handed it over to the LGC team so they could perform testing and validate the design. The things we would like to test on are: </p>
+            <p>Navigating to goal setting page<br>Adding a new goal<br>Checking how many videos the user has already watched for a goal<br>Deleting a goal</p>
+            <p>One suggestion we had for the design was to give the user the ability to add a “Personalized” goal as against a predefined goal. We included some follow up questions in the testing script to validate if adding a personalized goal is a real world scenario. </p>
+        </div>
+    </div>
+    <footer class="center ">
+        <p style="color:white; "><br>© Ying-Chen Kuo Coding</p>
+    </footer>
+</body>

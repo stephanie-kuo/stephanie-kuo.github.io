@@ -1,0 +1,475 @@
+@import 'animate.css';
+$theme-color:#29D2E4;
+$sub-color:white;
+$darker-color: #13829B;
+$ctr-color:#13829B;
+.hideme {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.icon-bar p {
+    font-size: 2vh;
+}
+
+p {
+    letter-spacing: 0.5px;
+    font-size: 2.5vh;
+}
+
+a {
+    letter-spacing: 0.5px;
+}
+
+h3 {
+    letter-spacing: 0.5px;
+}
+
+.jumbotron {
+    height: 100vh;
+}
+
+body {
+    background-color: $theme-color;
+}
+
+header {
+    position: relative;
+}
+
+nav {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    //    background-color: rgba(41, 210, 228, 0.7);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navbar-nav {
+    float: right;
+    li>a {
+        color: white;
+        &:hover {
+            color: white;
+            background-color: $darker-color;
+        }
+    }
+}
+
+.center {
+    width: auto;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main {
+    color: white;
+    background: url(../assets/jumbtron_bg.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    padding: 5% {
+        top: 15%;
+        bottom: 15%;
+    }
+    img {
+        width: 4em;
+        margin: 0 auto;
+    }
+    p {
+        font-size: 1%;
+    }
+}
+
+//My project
+.works {
+    .title {
+        color: white;
+        .text {
+            padding: 5% {
+                top: 1%;
+            }
+            ;
+            text-align: center;
+            color: white;
+        }
+    }
+    .intro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+        overflow: hidden;
+        &:nth-child(even) {
+            background-color: #F0F0F0;
+        }
+        &:nth-child(odd) {
+            //            background: url(../assets/care.jpeg) no-repeat;
+            background-color: white;
+            background-attachment: fixed;
+        }
+        //            &:nth-child(3) {
+        //            background: url(../assets/care.jpeg) no-repeat;
+        //            background-size: 100%;
+        //            background-attachment: fixed;
+        //            z-index: -2;
+        //        }
+        .text {
+            padding: 5%;
+            float: left;
+        }
+    }
+}
+
+#momkit_intro {
+    margin-top: 15%;
+    z-index: 1;
+    img {
+        width: 21vw;
+    }
+}
+
+#linktogether_intro {
+    margin-right: -35vw;
+    z-index: 1;
+    img {
+        width: 65vw;
+    }
+}
+
+#mofm_intro {
+    margin-left: -29vw;
+    img {
+        width: 50vw;
+    }
+}
+
+#temp_intro {
+    margin-top: 15%;
+    img {
+        width: 21vw;
+    }
+}
+
+.btn {
+    background-color: $theme-color;
+    color: $sub-color;
+    z-index: 5;
+    border-radius: 20vh;
+    margin-top: 1vh;
+    padding: 2vh {
+        left: 4vh;
+        right: 4vh;
+    }
+    ;
+    &:hover {
+        background-color: $ctr-color;
+        color: white;
+    }
+}
+
+//Graphic
+#graphics {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+}
+
+#graphics img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    background-color: none;
+    height: auto;
+    margin: 1%;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    padding: 0px;
+    z-index: -1;
+    opacity: 1;
+    box-sizing: border-box;
+    transition: all 0.6s ease-in-out;
+    &:hover {
+        opacity: 0.3;
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0);
+    }
+}
+
+.gallery {
+    background-color: white;
+    text-align: center;
+}
+
+.box {
+    overflow: hidden;
+    padding: 1%;
+    animation: boxx 5s;
+    -webkit-animation: boxx 5s;
+}
+
+@keyframes boxx {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes boxx {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+// About
+#about_title {
+    color: white;
+    padding: 3%;
+}
+
+#about {
+    background-image: url(../assets/about_bg.jpg);
+    background-size: cover;
+}
+
+.about {
+    .text {
+        padding: 3%;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        h3 {
+            color: #FFDE7D;
+        }
+    }
+}
+
+.social {
+    width: 100%;
+    text-align: center;
+    .icons {
+        margin: 0 auto;
+        a {
+            padding: 1%;
+        }
+    }
+}
+
+footer {
+    color: white;
+}
+
+// contact
+#contact {
+    text-align: center;
+    color: white;
+}
+
+.timeline {
+    /* ---- Timeline ---- */
+    ol {
+        position: relative;
+        display: block;
+        margin: 6% {
+            top: 12%;
+        }
+        ;
+        height: 4px;
+    }
+    ol::before,
+    ol::after {
+        content: "";
+        position: absolute;
+        top: -0.8vw;
+        display: block;
+        width: 0;
+        height: 0;
+        border-radius: 20px;
+        border: 1vw solid;
+    }
+    ol::before {
+        left: -1vw;
+    }
+    ol::after {
+        right: -10px;
+        border: 10px solid transparent;
+        border-right: 0px;
+        border-left: 20px solid;
+        border-radius: 3px;
+    }
+    /* ---- Timeline elements ---- */
+    li {
+        position: relative;
+        top: -12vh;
+        left: 8vw;
+        display: inline-block;
+        float: left;
+        width: 23vh;
+        transform: rotate(-45deg);
+        font: bold 10vw;
+        letter-spacing: 0.5px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: -2.5vw;
+            display: block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid;
+            border-radius: 10px;
+            background-color: white;
+        }
+    }
+}
+
+//talk bubble
+.bubble {
+    margin-bottom: 1%;
+    position: relative;
+    width: 45vw;
+    height: auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-left: 20vw;
+    p {
+        text-align: left;
+        width: 45vw;
+        height: auto;
+        color: white;
+    }
+    &:nth-child(odd) {
+        opacity: 0.6;
+        margin-left: 40vw;
+        &::after {
+            border-width: 15px 0 15px 15px;
+            left: 45vw;
+            top: 25%;
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 15px 15px 15px 0;
+        border-color: transparent;
+        display: block;
+        width: 0;
+        z-index: 1;
+        left: -15px;
+        top: 25%;
+    }
+}
+
+.timeline_pic {
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+    //        .pic {
+    //        display: none;
+    //    }
+    .works .intro {
+        height: auto;
+        padding: 5%;
+    }
+    .text {
+        width: 100%;
+        float: none;
+        position: relative;
+    }
+    .gallery {
+        width: 100%;
+    }
+    #momkit_intro {
+        margin-top: 0;
+        z-index: 1;
+        width: 90%;
+        img {
+            float: right;
+            margin: 0 auto;
+        }
+    }
+    //    #linktogether_intro {
+    //        margin-right: 0;
+    //        z-index: 1;
+    //        width: 100%;
+    //        img {
+    //            width: 100%;
+    //        }
+    //    }
+    //    #mofm_intro {
+    //        margin-left: -29vw;
+    //        img {
+    //            width: 50vw;
+    //        }
+    //    }
+    //    #temp_intro {
+    //        margin-top: 15%;
+    //        img {
+    //            width: 21vw;
+    //        }
+    //    }
+    .main {
+        padding-top: 35vh;
+    }
+    h4 {
+        font-size: 3.5vh;
+    }
+    .text h3 {
+        font-size: 3.5vh;
+    }
+    .btn {
+        font-size: 2vh;
+    }
+    .timeline {
+        display: none;
+    }
+    .timeline_pic {
+        display: block;
+        width: 100%;
+        img {
+            wdith: 100%;
+            height: auto;
+        }
+    }
+    .bubble {
+        p {
+            padding: 20%;
+        }
+    }
+    .title h3 {
+        height: 3.5vh;
+    }
+    .about {
+        .text {
+            wdith: 80%;
+            padding: 10%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            h1 {
+                font-size: 4vh;
+            }
+            h3 {
+                font-size: 3vh;
+                color: #FFDE7D;
+            }
+            h4 {
+                font-size: 3vh;
+            }
+            p {
+                font-size: 2.5vh;
+            }
+        }
+    }
+}

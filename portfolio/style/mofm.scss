@@ -1,0 +1,215 @@
+@import "main";
+$mofm-color: #333333;
+$mofm-sub: #f8f4e9;
+body {
+    background-color: $mofm-color;
+    color: $mofm-color;
+}
+
+.nav {
+    background-color: $mofm-color;
+}
+
+.navbar-nav {
+    float: left;
+    color: $mofm-color;
+    li>a {
+        &:hover {
+            color: $mofm-color;
+            background-color: $mofm-sub;
+        }
+    }
+}
+
+.mofm {
+    color: white;
+    background: url(../assets/mofm_jumbotron.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 5% {
+        top: 15em;
+        bottom: 15em;
+    }
+}
+
+.logo {
+    float: left;
+    img {
+        margin-top: -10%;
+        margin-left: 10%;
+        width: 25%;
+    }
+}
+
+.mockup {
+    img {
+        float: right;
+        margin-top: -65vh;
+        margin-right: -15%;
+        z-index: -1;
+        width: 75%;
+    }
+}
+
+.title {
+    color: white;
+    background-color: $mofm-color;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+    &:nth-child(odd) {
+        background-color: white;
+    }
+    &:nth-child(even) {
+        background-color: $mofm-sub;
+    }
+    padding: 3%;
+    p {
+        width: 80vw;
+        padding: 2.5%;
+        margin: 0 auto;
+        color: $mofm-color;
+    }
+    img {
+        width: 40%;
+    }
+}
+
+.timeline {
+    /* ---- Timeline ---- */
+    ol {
+        background-color: $mofm-color;
+    }
+    ol::before,
+    ol::after {
+        content: "";
+        position: absolute;
+        top: -0.7vw;
+        display: block;
+        width: 0;
+        height: 0;
+        border-radius: 20px;
+        border: 1vw solid $mofm-color;
+    }
+    ol::before {
+        left: -1vw;
+    }
+    ol::after {
+        right: -10px;
+        border: 10px solid transparent;
+        border-right: 0px;
+        border-left: 20px solid $mofm-color;
+        border-radius: 3px;
+    }
+    /* ---- Timeline elements ---- */
+    li {
+        left: 10vw;
+        color: $mofm-color;
+        &::before {
+            border-color: $mofm-color;
+        }
+    }
+}
+
+.persona .content {
+    //    height: 200vh;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-left: 6%;
+    .card {
+        background-color: white;
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+        padding: 5vh;
+        margin: 2.5%;
+        cursor: default;
+        li {
+            list-style-type: circle;
+            margin-left: 1em;
+        }
+        img {
+            width: 22vh;
+            float: left;
+        }
+        p {
+            padding: 0;
+            width: auto;
+            text-align: left;
+            padding-left: 18%;
+        }
+        h3 {
+            text-align: left;
+            padding-left: 18%;
+            border-bottom: $mofm-color;
+            text-decoration: underline;
+        }
+        &:hover {
+            box-shadow: none;
+            -ms-transform: translate(2px, 2px);
+            /* IE 9 */
+            -webkit-transform: translate(2px, 2px);
+            /* Safari */
+            transform: translate(2px, 2px);
+            /* Standard syntax */
+        }
+    }
+}
+
+.user_journey img {
+    width: 80%;
+    mix-blend-mode: multiply;
+}
+
+//talk bubble
+.bubble {
+    background: $mofm-color;
+    p {
+        color: white;
+        width: 45vw;
+    }
+    &:after {
+        border-color: transparent $mofm-color;
+    }
+}
+
+.prototype img {
+    width: 80%;
+}
+
+.social {
+    width: 100%;
+    text-align: center;
+    .icons {
+        margin: 0 auto;
+        a {
+            padding: 1%;
+        }
+    }
+}
+
+.timeline {
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+    .timeline_pic {
+        display: block;
+        width: 100%;
+    }
+    .timeline_pic img {
+        wdith: 100%;
+        height: auto;
+    }
+    .logo {
+        padding-top: 20vh;
+    }
+    .mockup {
+        display: none;
+    }
+}

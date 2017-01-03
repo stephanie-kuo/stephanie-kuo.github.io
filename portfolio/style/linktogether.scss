@@ -1,0 +1,164 @@
+@import "main";
+$linkto-color: #5DB446;
+$linkto-darker: #4B8C38;
+body {
+    background-color: white;
+}
+
+.nav {
+    background-color: $linkto-color;
+}
+
+.navbar-nav {
+    float: left;
+    color: $linkto-color;
+    li>a {
+        &:hover {
+            background-color: $linkto-darker;
+        }
+    }
+}
+
+.linkto {
+    color: white;
+    background: url(../assets/linkto_jumbotron.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 5% {
+        top: 15em;
+        bottom: 15em;
+    }
+    img {
+        width: 40vw;
+    }
+}
+
+.logo {
+    float: left;
+}
+
+.mockup {
+    img {
+        float: right;
+        margin-top: -20vh;
+        margin-right: -25%;
+        z-index: -1;
+        width: 75%;
+    }
+}
+
+.title {
+    color: $linkto-color;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+    &:nth-child(odd) {
+        background-color: white;
+    }
+    &:nth-child(even) {
+        border-bottom: 1px solid #EFEFEF;
+    }
+    padding: 3%;
+    p {
+        width: 80vw;
+        padding: 2.5%;
+        margin: 0 auto;
+        color: black;
+    }
+    img {
+        width: 40%;
+    }
+}
+
+.timeline {
+    /* ---- Timeline ---- */
+    ol {
+        background-color: $linkto-color;
+    }
+    ol::before,
+    ol::after {
+        content: "";
+        position: absolute;
+        top: -0.7vw;
+        display: block;
+        width: 0;
+        height: 0;
+        border-radius: 20px;
+        border: 1vw solid $linkto-color;
+    }
+    ol::before {
+        left: -1vw;
+    }
+    ol::after {
+        right: -10px;
+        border: 10px solid transparent;
+        border-right: 0px;
+        border-left: 20px solid $linkto-color;
+        border-radius: 3px;
+    }
+    /* ---- Timeline elements ---- */
+    li {
+        left: 10vw;
+        color: $linkto-color;
+        &::before {
+            border-color: $linkto-color;
+        }
+    }
+}
+
+//talk bubble
+.bubble {
+    background: $linkto-color;
+    p {
+        color: white;
+        width: 45vw;
+    }
+    &:after {
+        border-color: transparent $linkto-color;
+    }
+}
+
+.timeline_pic {
+    display: none;
+}
+
+.timeline {
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+    .timeline_pic {
+        display: block;
+        width: 100%;
+    }
+    .timeline_pic img {
+        wdith: 100%;
+        height: auto;
+    }
+    .linkto {
+        width: 100%;
+        .mockup {
+            width: 100%;
+            img {
+                float: none;
+                position: relative;
+                margin: 0 auto;
+                //                padding-top: 15vh;
+            }
+        }
+        .logo {
+            img {
+                float: none;
+                margin: 0 auto;
+                padding-top: 35vh;
+            }
+        }
+    }
+}

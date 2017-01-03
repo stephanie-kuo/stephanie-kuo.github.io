@@ -1,0 +1,254 @@
+@import "main";
+$momkit-color:#8C6D8F;
+$momkit-sub:#FCFCFC;
+$momkit-black:#404040;
+$momkit-green:#7EBCAD;
+$momkit-darker:#5B4A5E;
+body {
+    background-color: $momkit-color;
+}
+
+nav {
+    background-color: $momkit-color;
+}
+
+.navbar-nav {
+    float: left;
+    li>a {
+        background-color: $momkit-color;
+        &:hover {
+            background-color: $momkit-darker;
+        }
+    }
+}
+
+.momkit {
+    color: white;
+    background: url(../assets/care.jpeg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 5% {
+        top: 15em;
+        bottom: 15em;
+    }
+    img {
+        width: 40vw;
+        z-index: 10;
+    }
+}
+
+.momkit_logo {
+    float: left;
+}
+
+.momkit_mockup {
+    float: right;
+    margin-top: -20vh;
+    z-index: -1;
+}
+
+.title {
+    color: white;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+    &:nth-child(odd) {
+        background-color: white;
+    }
+    &:nth-child(even) {
+        background-color: $momkit-sub;
+    }
+    padding: 3%;
+    p {
+        width: 80vw;
+        padding: 3%;
+        margin: 0 auto;
+        color: $momkit-black;
+    }
+}
+
+.flow .content {
+    img {
+        width: 100%;
+        mix-blend-mode: multiply;
+    }
+}
+
+.part .content {
+    overflow: hidden;
+    h3 {
+        color: $momkit-color;
+        margin: 3%;
+    }
+    img {
+        width: 90%;
+        mix-blend-mode: multiply;
+    }
+    .text {
+        img {
+            width: 20%;
+            margin: 3%;
+        }
+        margin:0 auto;
+    }
+}
+
+.project_intro {
+    .title {
+        padding-top: 0%;
+    }
+}
+
+.design_process {
+    background-color: white;
+    .title {
+        color: $momkit-color;
+    }
+    .content {
+        background-color: white;
+        text-align: center;
+    }
+}
+
+.interview {
+    .content {
+        padding-bottom: 5%;
+    }
+}
+
+.persona .content {
+    //    height: 200vh;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-left: 6%;
+    .card {
+        background-color: white;
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+        padding: 5vh;
+        margin: 2.5%;
+        cursor: default;
+        li {
+            list-style-type: circle;
+            margin-left: 1em;
+        }
+        img {
+            width: 22vh;
+            //            float: left;
+            margin: 0 auto;
+        }
+        p {
+            padding: 0;
+            width: auto;
+        }
+        .text {
+            text-align: left;
+            //            padding-left: 35%;
+        }
+        &:hover {
+            box-shadow: none;
+            -ms-transform: translate(2px, 2px);
+            /* IE 9 */
+            -webkit-transform: translate(2px, 2px);
+            /* Safari */
+            transform: translate(2px, 2px);
+            /* Standard syntax */
+        }
+    }
+}
+
+.timeline {
+    /* ---- Timeline ---- */
+    ol {
+        background-color: $momkit-color;
+    }
+    ol::before,
+    ol::after {
+        content: "";
+        position: absolute;
+        top: -0.7vw;
+        display: block;
+        width: 0;
+        height: 0;
+        border-radius: 20px;
+        border: 1vw solid $momkit-color;
+    }
+    ol::before {
+        left: -1vw;
+    }
+    ol::after {
+        right: -10px;
+        border: 10px solid transparent;
+        border-right: 0px;
+        border-left: 20px solid $momkit-color;
+        border-radius: 3px;
+    }
+    /* ---- Timeline elements ---- */
+    li {
+        left: 10vw;
+        color: $momkit-color;
+        &::before {
+            border-color: $momkit-color;
+        }
+    }
+}
+
+//talk bubble
+.bubble {
+    background: $momkit-green;
+    p {
+        color: white;
+        width: 45vw;
+    }
+    &:after {
+        border-color: transparent $momkit-green;
+    }
+}
+
+.timeline_pic {
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+    .momkit {
+        padding-top: 80%;
+        .momkit_mockup {
+            float: none;
+            margin: 0 auto;
+            width: 100%;
+            padding-top: 60%;
+            padding-left: 50%;
+            img {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+    .card {
+        li {
+            font-size: 2vh;
+        }
+    }
+    .timeline {
+        display: none;
+    }
+    .timeline_pic {
+        display: block;
+        width: 100%;
+        img {
+            wdith: 100%;
+            height: auto;
+        }
+    }
+    #dictionary .text {
+        img {
+            width: 80%;
+        }
+    }
+}
