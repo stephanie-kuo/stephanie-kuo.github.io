@@ -45,13 +45,12 @@ function hasScrolled() {
 $(document).ready(function () {
     $('img').addClass("hideme").viewportChecker({
         classToAdd: "visible animated fadeIn",
-        offset: 50
+        offset: 20
     });
     $('.card').addClass("hideme").viewportChecker({
         classToAdd: "visible animated fadeIn",
         offset: 50
     });
-
 });
 
 /*

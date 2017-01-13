@@ -172,3 +172,58 @@ nav a {
 .prototype img {
     width: 80%;
 }
+
+.prev {
+    width: 25%;
+    padding: 3%;
+    a {
+        color: white;
+    }
+    .pnword {
+        float: right;
+        &>p {
+            color: white;
+            opacity: 0.7;
+        }
+    }
+    svg {
+        padding-top: 5%;
+        float: left;
+    }
+    &:hover {
+        p {
+            opacity: 1;
+        }
+    }
+}
+
+.next {
+    width: 19%;
+    padding: 3%;
+    p {
+        color: white;
+        opacity: 0.7;
+    }
+    .pnword {
+        text-align: right;
+        float: left;
+    }
+    svg {
+        padding-top: 5%;
+        float: right;
+    }
+    &:hover {
+        p {
+            color: white;
+            opacity: 1;
+        }
+    }
+}
+
+.left-arrow {
+    fill: white;
+}
+
+.right-arrow {
+    fill: white;
+}

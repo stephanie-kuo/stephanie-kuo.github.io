@@ -54,10 +54,12 @@
         <br>
         <br>
         <br>
-        <a href="#projects" class="center page-scroll"><img src="assets/down-arrow.svg" alt="down"></a>
+        <a href="#projects" class="center page-scroll">
+            <div class="scroll"></div>
+        </a>
     </div>
     <div class="works">
-        <section class="title center">
+        <section class="title">
             <div class="text">
                 <h3>My Projects</h3>
                 <p>UX Design | UI Design | Interaction Design</p>
@@ -67,31 +69,17 @@
     </div>
     <div class="works" id="projects">
         <!--        REMINDer:project of CHI-->
-        <!--
-<seciton class="intro col-md-12" id="reminder">
-    <div class="text col-md-6">
-        <h4>REMINDer</h4>
-        <p>REMINDer is an application designed for people with ADD/ADHD. Considering to their characteristic of less concentrations, we designed a task tracking tool to help them focus on current task and achieve their own goals.
-        </p>
-        <a href="reminder.html"><button class="btn">View Case Study</button></a>
-    </div>
-    <div class="pic" id="reminder_pic">
-        <img src="assets/reminder.png" alt="">
-    </div>
-
-</seciton>
--->
-        <!--        MomKit:Design Clinic-->
-        <section class="intro col-md-12 col-sm-12" id="momKit">
-            <div class="pic col-md-3 col-sm-12" id="momkit_intro">
-                <img src="assets/momkit_intro.png" alt="">
+        <seciton class="intro col-md-12" id="reminder">
+            <div class="pic" id="reminder_intro">
+                <img src="assets/reminder.png" alt="" id="reminder_pic">
             </div>
-            <div class="text col-md-6 col-sm-12">
-                <h4>MomKit</h4>
-                <p>MomKit is a mobile health app that teaches parents evidence-based breastfeeding techniques with Pixar-style animations. With MomKit, mothers can learn how to alleviate, improve, or prevent the most common breastfeeding problems.</p>
-                <a href="momKit.html"><button class="btn">View Case Study</button></a>
+            <div class="text col-md-6">
+                <h4>REMINDer</h4>
+                <p>REMINDer is an application designed for people with ADD/ADHD. Considering to their characteristic of less concentrations, we designed a task tracking tool to help them focus on current task and achieve their own goals.
+                </p>
+                <a href="reminder.html"><button class="btn">View Case Study</button></a>
             </div>
-        </section>
+        </seciton>
         <!--        Link Together: project of 501-->
         <section class="intro col-md-12 col-sm-12" id="linkto">
 
@@ -104,27 +92,40 @@
                 <img src="assets/linktogether_intro.png" alt="">
             </div>
         </section>
+        <!--        MomKit:Design Clinic-->
+        <section class="intro col-md-12 col-sm-12" id="momKit">
+            <div class="pic col-md-3 col-sm-12" id="momkit_intro">
+                <img src="assets/momkit_intro.png" alt="">
+            </div>
+            <div class="text col-md-6 col-sm-12">
+                <h4>MomKit</h4>
+                <p>MomKit is a mobile health app that teaches parents evidence-based breastfeeding techniques with Pixar-style animations. With MomKit, mothers can learn how to alleviate, improve, or prevent the most common breastfeeding problems.</p>
+                <a href="momKit.html"><button class="btn">View Case Study</button></a>
+            </div>
+        </section>
+
 
         <section class="intro col-md-12 col-sm-12">
-            <div class="pic" id="mofm_intro">
-                <img src="assets/mofm_intro.png" alt="">
-            </div>
             <div class="text col-md-6">
                 <h4>Millions of Memories</h4>
                 <p>Millions of Memories is a game application on tablet, it can help people better understand their families and create delightful family gathering time. </p>
                 <a href="mofm.html"><button class="btn">View Case Study</button></a>
             </div>
+            <div class="pic" id="mofm_intro">
+                <img src="assets/mofm_intro.png" alt="">
+            </div>
         </section>
         <section class="intro col-md-12" id="temp">
+            <div class="pic" id="temp_intro">
+                <img src="assets/temp_intro.png" alt="">
+
+            </div>
             <div class="text col-md-6">
                 <h4>Bluetooth Thermometer</h4>
                 <p>This application is with Bluetooth sensor to measure measure room, water, body and group temperatures. Also, users can find the page to see the temperature record in a very convenient way.</p>
                 <a href="thermometer.html"><button class="btn">View Case Study</button></a>
             </div>
-            <div class="pic" id="temp_intro">
-                <img src="assets/temp_intro.png" alt="">
 
-            </div>
         </section>
     </div>
     <div class="title" id="graphics">
@@ -136,7 +137,7 @@
             <div class="col-md-4 col-sm-6 box"><img src="assets/tingzhi_tb.jpg" alt=""></div>
             <div class="col-md-4 col-sm-6 box"><img src="assets/starsky2_tb.jpg" alt=""></div>
             <div class="col-md-4 col-sm-6 box"><img src="assets/undersea_tb.jpg" alt=""></div>
-            <div class="col-md-4 col-sm-6 box"><img src="assets/darlie_tb.jpg" alt=""></div>
+            <div class="col-md-4 col-sm-6 box"><img src="assets/typo_raining_tb.jpg" alt=""></div>
             <div class="col-md-4 col-sm-6 box"><img src="assets/jump_tb.jpg" alt=""></div>
             <div class="col-md-4 col-sm-6 box"><img src="assets/map_tb.jpg" alt=""></div>
         </div>
@@ -175,9 +176,50 @@
 
     <div class="social">
         <div class="icons">
-            <a href="https://www.behance.net/stephaniekuo"><img src="assets/behance-logo-button.svg" alt="" style="width: 6vh;" class="behance"></a>
-            <a href="https://www.pinterest.com/diace2001/"><img src="assets/pinterest-social-logo.svg" alt="" style="width: 6vh;" class="pinterest"></a>
-            <a href="https://www.linkedin.com/in/ying-chen-stephanie-kuo-7214b911b"><img src="assets/linkedin-button.svg" alt="" style="width: 6vh;" class="linkedin"></a>
+            <!--           behance icon-->
+            <a href="https://www.behance.net/stephaniekuo"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="106 -106 512 512" style="enable-background:new 106 -106 512 512;" xml:space="preserve" class="bh">
+<path class="behance" d="M321.5,107.3c0-19.6-13.3-19.6-13.3-19.6h-7.1h-47.8l0,0v42.1h51.5C313.6,129.8,321.5,126.9,321.5,107.3z"/>
+<path class="behance" d="M448.6,129.8c-29.1,0-33.2,29-33.2,29h61.9C477.3,158.8,477.7,129.8,448.6,129.8z"/>
+<path class="behance" d="M308.1,158.8h-54.8v50.4h48.6c0.8,0,2,0,3.5,0c7.8-0.2,22.6-2.4,22.6-24.5C328,158.6,308.1,158.8,308.1,158.8z"
+	/>
+<path class="behance" d="M362-106C220.8-106,106,8.8,106,150c0,141.1,114.8,256,256,256c141.1,0,256-114.9,256-256
+	C618,8.8,503.2-106,362-106z M407.3,65.3H485v23.2h-77.7V65.3z M368,187.1c0,57.5-59.9,55.6-59.9,55.6h-54.8h-1.6h-41.6V54.2h41.6
+	h1.6h54.8c29.8,0,53.3,16.5,53.3,50.2s-28.7,35.9-28.7,35.9C370.6,140.3,368,187.1,368,187.1z M513.4,184h-97.7
+	c0,35,33.2,32.8,33.2,32.8c31.3,0,30.2-20.3,30.2-20.3h33.2c0,53.8-64.5,50.1-64.5,50.1c-77.4,0-72.4-72-72.4-72
+	s-0.1-72.4,72.4-72.4C524.1,102.2,513.4,184,513.4,184z"/>
+</svg>
+</a>
+            <!--           pinterest icon-->
+            <a href="https://www.pinterest.com/diace2001/">
+                <?xml version="1.0" encoding="utf-8"?>
+                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="106 -106 512 512" style="enable-background:new 106 -106 512 512;" xml:space="preserve">
+<g>
+	<path class="pinterest" d="M362-106C220.6-106,106,8.6,106,150s114.6,256,256,256s256-114.6,256-256S503.4-106,362-106z M391.5,235
+		c-23.7,0-46-12.8-53.6-27.3c0,0-12.7,50.5-15.4,60.3c-9.5,34.4-37.5,68.9-39.6,71.7c-1.5,2-4.9,1.4-5.2-1.3
+		c-0.6-4.4-7.7-47.9,0.7-83.3c4.2-17.8,28.2-119.5,28.2-119.5s-7-14-7-34.7c0-32.5,18.8-56.8,42.3-56.8c19.9,0,29.6,15,29.6,32.9
+		c0,20.1-12.8,50-19.3,77.8c-5.5,23.3,11.7,42.2,34.6,42.2c41.6,0,69.5-53.4,69.5-116.6c0-48.1-32.3-84-91.2-84
+		c-66.5,0-108,49.6-108,105c0,19.1,5.6,32.6,14.5,43c4,4.8,4.6,6.7,3.2,12.2c-1.1,4-3.5,13.7-4.5,17.6c-1.5,5.6-6,7.5-11,5.5
+		c-30.6-12.5-44.9-46.1-44.9-83.8c0-62.3,52.5-137,156.7-137c83.7,0,138.8,60.6,138.8,125.6C509.8,170.8,461.9,235,391.5,235z"/>
+</g>
+</svg>
+            </a>
+            <a href="https://www.linkedin.com/in/ying-chen-stephanie-kuo-7214b911b">
+                <?xml version="1.0" encoding="utf-8"?>
+                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="106 -106 512 512" style="enable-background:new 106 -106 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<g>
+			<path class="linkedin" d="M362-106C220.6-106,106,8.6,106,150s114.6,256,256,256s256-114.6,256-256C618,8.6,503.4-106,362-106z
+				 M298,274h-64V50h64V274z M268,36.3c-16.6,0-30-13.4-30-30s13.4-30,30-30c16.6,0,30,13.5,30,30C298,22.8,284.6,36.3,268,36.3z
+				 M522,274h-64V135.5c0-16.2-4.6-27.6-24.6-27.6c-33.1,0-39.4,27.6-39.4,27.6V274h-64V50h64v21.4c9.2-7,32-21.4,64-21.4
+				c20.7,0,64,12.4,64,87.4L522,274L522,274z"/>
+		</g>
+	</g>
+</g>
+</svg>
+            </a>
 
         </div>
 

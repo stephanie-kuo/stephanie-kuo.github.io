@@ -90,10 +90,7 @@ nav {
     .title {
         color: white;
         .text {
-            padding: 5% {
-                top: 1%;
-            }
-            ;
+            padding: 5%;
             text-align: center;
             color: white;
         }
@@ -125,6 +122,15 @@ nav {
     }
 }
 
+#reminder_pic {
+    width: 45%;
+}
+
+#reminder_intro {
+    margin-top: 0%;
+    margin-right: -30vw;
+}
+
 #momkit_intro {
     margin-top: 15%;
     z-index: 1;
@@ -142,7 +148,7 @@ nav {
 }
 
 #mofm_intro {
-    margin-left: -29vw;
+    margin-right: -29vw;
     img {
         width: 50vw;
     }
@@ -159,7 +165,7 @@ nav {
     background-color: $theme-color;
     color: $sub-color;
     z-index: 5;
-    border-radius: 20vh;
+    border-radius: 0.5vh;
     margin-top: 1vh;
     padding: 2vh {
         left: 4vh;
@@ -264,6 +270,88 @@ nav {
     }
 }
 
+svg {
+    width: 6vh;
+}
+
+.behance {
+    fill: white;
+}
+
+.bh:hover {
+    .behance {
+        fill: #0055FF;
+    }
+}
+
+.pinterest {
+    fill: white;
+    &:hover {
+        fill: #BF0112;
+    }
+}
+
+.linkedin {
+    fill: white;
+    &:hover {
+        fill: #0079BB;
+    }
+}
+
+@-webkit-keyframes circleBounce {
+    0% {
+        -webkit-transform: scale(0.9);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0.5;
+    }
+    100% {
+        -webkit-transform: scale(1.1);
+        opacity: 0;
+    }
+}
+
+.scroll {
+    position: relative;
+    top: 50px;
+    left: calc(50% - 3px);
+    width: 20px;
+    height: 20px;
+    border: 3px solid white;
+    border-top: none;
+    border-left: none;
+    cursor: pointer;
+    -webkit-transform: rotate(45deg);
+    -webkit-transform-origin: 50% 50%;
+}
+
+.scroll:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(50% - 23px);
+    /*circle = 1+50+1 = 52px*/
+    left: calc(50% - 23px);
+    /*arrow = 3+3 = 6px*/
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, .8);
+    border: 1px solid white;
+    border-radius: 50%;
+    -webkit-animation: circleBounce 1.2s linear infinite;
+}
+
+.scroll:hover:after {
+    background-color: rgba(0, 0, 0, .15);
+}
+
 footer {
     color: white;
 }
@@ -341,16 +429,18 @@ footer {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    margin-left: 20vw;
+    margin-left: 20%;
     p {
         text-align: left;
         width: 45vw;
         height: auto;
         color: white;
+        padding-left: 3%;
+        padding-right: 3%;
     }
     &:nth-child(odd) {
         opacity: 0.6;
-        margin-left: 40vw;
+        margin-left: 30%;
         &::after {
             border-width: 15px 0 15px 15px;
             left: 45vw;
@@ -379,6 +469,9 @@ footer {
     //        .pic {
     //        display: none;
     //    }
+    nav {
+        font-szie: 3vh;
+    }
     .works .intro {
         height: auto;
         padding: 5%;
@@ -449,7 +542,7 @@ footer {
         }
     }
     .title h3 {
-        height: 3.5vh;
+        font-size: 3.5vh;
     }
     .about {
         .text {
@@ -470,6 +563,11 @@ footer {
             p {
                 font-size: 2.5vh;
             }
+        }
+    }
+    .card {
+        p {
+            font-size: 2vh;
         }
     }
 }

@@ -1,4 +1,6 @@
 @import "main";
+$reminder-color: #59C6DB;
+$reminder-darker: #30A9B2;
 $linkto-color: #5DB446;
 $linkto-darker: #4B8C38;
 body {
@@ -6,22 +8,22 @@ body {
 }
 
 .nav {
-    background-color: $linkto-color;
+    background-color: $reminder-color;
 }
 
 .navbar-nav {
     float: left;
-    color: $linkto-color;
+    color: white;
     li>a {
         &:hover {
-            background-color: $linkto-darker;
+            background-color: $reminder-darker;
         }
     }
 }
 
 .linkto {
     color: white;
-    background: url(../assets/linkto_jumbotron.jpg) no-repeat center center;
+    background: url(../assets/reminder_jumbotron.jpg) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
@@ -29,10 +31,11 @@ body {
     overflow: hidden;
     padding: 5% {
         top: 15em;
+        left: 15%;
         bottom: 15em;
     }
     img {
-        width: 40vw;
+        width: 23vw;
     }
 }
 
@@ -43,15 +46,14 @@ body {
 .mockup {
     img {
         float: right;
-        margin-top: -20vh;
-        margin-right: -25%;
+        margin-top: -15vh;
         z-index: -1;
-        width: 75%;
+        width: 50%;
     }
 }
 
 .title {
-    color: $linkto-color;
+    color: $reminder-color;
     //    padding-bottom: 3%;
     padding-top: 3%;
     text-align: center;
@@ -59,6 +61,7 @@ body {
 
 .content {
     text-align: center;
+    padding: 3%;
     &:nth-child(odd) {
         background-color: white;
     }
@@ -66,6 +69,7 @@ body {
         border-bottom: 1px solid #EFEFEF;
     }
     p {
+        text-align: left;
         width: 80vw;
         padding: 2.5% {
             left: 12%;
@@ -74,11 +78,17 @@ body {
         ;
         margin: 0 auto;
         color: black;
-        text-align: left;
     }
     img {
         width: 40%;
-        margin: 0 auto;
+    }
+}
+
+.prototype,
+.final {
+    img {
+        width: 20%;
+        margin: 1%;
     }
 }
 
@@ -121,23 +131,23 @@ body {
     }
     &:hover {
         p {
-            color: $linkto-color;
+            color: $reminder-color;
         }
     }
 }
 
 .left-arrow {
-    fill: $linkto-color;
+    fill: $reminder-color;
 }
 
 .right-arrow {
-    fill: $linkto-color;
+    fill: $reminder-color;
 }
 
 .timeline {
     /* ---- Timeline ---- */
     ol {
-        background-color: $linkto-color;
+        background-color: $reminder-color;
     }
     ol::before,
     ol::after {
@@ -148,7 +158,7 @@ body {
         width: 0;
         height: 0;
         border-radius: 20px;
-        border: 1vw solid $linkto-color;
+        border: 1vw solid $reminder-color;
     }
     ol::before {
         left: -1vw;
@@ -157,30 +167,28 @@ body {
         right: -10px;
         border: 10px solid transparent;
         border-right: 0px;
-        border-left: 20px solid $linkto-color;
+        border-left: 20px solid $reminder-color;
         border-radius: 3px;
     }
     /* ---- Timeline elements ---- */
     li {
         left: 10vw;
-        color: $linkto-color;
+        color: $reminder-color;
         &::before {
-            border-color: $linkto-color;
+            border-color: $reminder-color;
         }
     }
 }
 
 //talk bubble
 .bubble {
-    background: $linkto-color;
+    background: $reminder-color;
     p {
         color: white;
         width: 45vw;
-        padding-left: 5%;
-        padding-right: 5%;
     }
     &:after {
-        border-color: transparent $linkto-color;
+        border-color: transparent $reminder-color;
     }
 }
 
@@ -188,7 +196,73 @@ body {
     display: none;
 }
 
+.persona .content {
+    //    height: 200vh;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-left: 6%;
+    .card {
+        background-color: white;
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+        padding: 5vh;
+        margin: 2.5%;
+        cursor: default;
+        text-align: left;
+        li {
+            list-style-type: circle;
+            margin-left: 1em;
+        }
+        img {
+            width: 22vh;
+            float: left;
+        }
+        p {
+            padding: 0;
+            width: auto;
+            text-align: left;
+            padding-left: 18%;
+        }
+        h3 {
+            text-align: left;
+            padding-left: 18%;
+            border-bottom: $reminder-color;
+            text-decoration: underline;
+        }
+        &:hover {
+            box-shadow: none;
+            -ms-transform: translate(2px, 2px);
+            /* IE 9 */
+            -webkit-transform: translate(2px, 2px);
+            /* Safari */
+            transform: translate(2px, 2px);
+            /* Standard syntax */
+        }
+    }
+}
+
+.end .content {
+    background-color: $reminder-color;
+    height: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    #icon {
+        width: 15%;
+        margin-left: 20%;
+    }
+    p {
+        float: left;
+        padding: 0;
+        width: 50%;
+        color: white;
+    }
+}
+
 @media screen and (max-width: 991px) {
+    .navbar-nav {
+        font-size: 3vh;
+    }
     .timeline_pic {
         display: block;
         width: 100%;
@@ -213,6 +287,36 @@ body {
                 float: none;
                 margin: 0 auto;
                 padding-top: 35vh;
+            }
+        }
+    }
+    .prototype,
+    .final {
+        img {
+            width: 40%;
+            margin: 1%;
+        }
+    }
+    .end {
+        display: none;
+    }
+    .next {
+        width: 50%;
+        padding: 3%;
+        a {
+            color: gray;
+        }
+        .pnword {
+            text-align: right;
+            float: left;
+        }
+        svg {
+            padding-top: 5%;
+            float: right;
+        }
+        &:hover {
+            p {
+                color: $reminder-color;
             }
         }
     }

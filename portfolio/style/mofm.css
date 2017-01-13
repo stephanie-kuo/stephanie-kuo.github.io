@@ -66,7 +66,6 @@ nav {
   color: white; }
   .works .title .text {
     padding: 5%;
-      padding-top: 1%;
     text-align: center;
     color: white; }
 .works .intro {
@@ -83,6 +82,9 @@ nav {
   .works .intro .text {
     padding: 5%;
     float: left; }
+
+#reminder_intro img {
+  wdith: 10%; }
 
 #momkit_intro {
   margin-top: 15%;
@@ -110,7 +112,7 @@ nav {
   background-color: #29D2E4;
   color: white;
   z-index: 5;
-  border-radius: 20vh;
+  border-radius: 0.5vh;
   margin-top: 1vh;
   padding: 2vh;
     padding-left: 4vh;
@@ -186,6 +188,69 @@ nav {
     margin: 0 auto; }
     .social .icons a {
       padding: 1%; }
+
+svg {
+  width: 6vh; }
+
+.behance {
+  fill: white; }
+
+.bh:hover .behance {
+  fill: #0055FF; }
+
+.pinterest {
+  fill: white; }
+  .pinterest:hover {
+    fill: #BF0112; }
+
+.linkedin {
+  fill: white; }
+  .linkedin:hover {
+    fill: #0079BB; }
+
+@-webkit-keyframes circleBounce {
+  0% {
+    -webkit-transform: scale(0.9);
+    opacity: 0; }
+  20% {
+    opacity: 0.5; }
+  50% {
+    opacity: 1; }
+  80% {
+    opacity: 0.5; }
+  100% {
+    -webkit-transform: scale(1.1);
+    opacity: 0; } }
+.scroll {
+  position: relative;
+  top: 50px;
+  left: calc(50% - 3px);
+  width: 20px;
+  height: 20px;
+  border: 3px solid white;
+  border-top: none;
+  border-left: none;
+  cursor: pointer;
+  -webkit-transform: rotate(45deg);
+  -webkit-transform-origin: 50% 50%; }
+
+.scroll:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(50% - 23px);
+  /*circle = 1+50+1 = 52px*/
+  left: calc(50% - 23px);
+  /*arrow = 3+3 = 6px*/
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 1px solid white;
+  border-radius: 50%;
+  -webkit-animation: circleBounce 1.2s linear infinite; }
+
+.scroll:hover:after {
+  background-color: rgba(0, 0, 0, 0.15); }
 
 footer {
   color: white; }
@@ -493,6 +558,44 @@ body {
 
 .timeline_pic {
   display: none; }
+
+.prev {
+  width: 17%;
+  padding: 3%; }
+  .prev a {
+    color: white; }
+  .prev .pnword {
+    float: right; }
+    .prev .pnword > p {
+      color: white;
+      opacity: 0.7; }
+  .prev svg {
+    padding-top: 5%;
+    float: left; }
+  .prev:hover p {
+    opacity: 1; }
+
+.next {
+  width: 25%;
+  padding: 3%; }
+  .next p {
+    color: white;
+    opacity: 0.7; }
+  .next .pnword {
+    text-align: right;
+    float: left; }
+  .next svg {
+    padding-top: 5%;
+    float: right; }
+  .next:hover p {
+    color: white;
+    opacity: 1; }
+
+.left-arrow {
+  fill: white; }
+
+.right-arrow {
+  fill: white; }
 
 @media screen and (max-width: 991px) {
   .timeline_pic {
