@@ -62,9 +62,6 @@ body {
 .content {
     text-align: center;
     padding: 3%;
-    &:nth-child(odd) {
-        background-color: white;
-    }
     &:nth-child(even) {
         border-bottom: 1px solid #EFEFEF;
     }
@@ -84,12 +81,22 @@ body {
     }
 }
 
+.project_intro {
+    background-color: $reminder-color;
+    h3,
+    p {
+        color: white;
+    }
+}
+
 .prototype,
-.final {
+.final,
+.design_process {
     img {
         width: 20%;
         margin: 1%;
     }
+    background-color: #FCFCFC;
 }
 
 .prev {
@@ -249,7 +256,7 @@ body {
     justify-content: center;
     #icon {
         width: 15%;
-        margin-left: 20%;
+        margin-left: 15%;
     }
     p {
         float: left;
@@ -260,16 +267,15 @@ body {
 }
 
 @media screen and (max-width: 991px) {
-    .navbar-nav {
+    .title h3 {
         font-size: 3vh;
     }
     .timeline_pic {
         display: block;
         width: 100%;
-    }
-    .timeline_pic img {
-        wdith: 100%;
-        height: auto;
+        ul {
+            list-style-type: none;
+        }
     }
     .linkto {
         width: 100%;
@@ -279,7 +285,6 @@ body {
                 float: none;
                 position: relative;
                 margin: 0 auto;
-                //                padding-top: 15vh;
             }
         }
         .logo {

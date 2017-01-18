@@ -68,7 +68,12 @@ nav {
     padding: 3%;
     p {
         width: 80vw;
-        padding: 3%;
+        padding: 2.5% {
+            left: 12%;
+            right: 12%;
+        }
+        ;
+        text-align: left;
         margin: 0 auto;
         color: $momkit-black;
     }
@@ -240,7 +245,7 @@ nav {
 }
 
 .next {
-    width: 25%;
+    width: 15%;
     padding: 3%;
     p {
         color: white;
@@ -271,6 +276,9 @@ nav {
 }
 
 @media screen and (max-width: 991px) {
+    .title h3 {
+        font-size: 3vh;
+    }
     .momkit {
         padding-top: 80%;
         .momkit_mockup {
@@ -305,5 +313,11 @@ nav {
         img {
             width: 80%;
         }
+    }
+    .next {
+        width: 40%;
+    }
+    .prev {
+        width: 50%;
     }
 }

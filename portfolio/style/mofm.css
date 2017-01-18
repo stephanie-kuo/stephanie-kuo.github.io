@@ -16,7 +16,14 @@ a {
   letter-spacing: 0.5px; }
 
 h3 {
-  letter-spacing: 0.5px; }
+  letter-spacing: 0.5px;
+  font-size: 3.5vh; }
+
+h4 {
+  font-size: 3vh; }
+
+.btn {
+  font-size: 2.5vh; }
 
 .jumbotron {
   height: 100vh; }
@@ -83,8 +90,12 @@ nav {
     padding: 5%;
     float: left; }
 
-#reminder_intro img {
-  wdith: 10%; }
+#reminder_pic {
+  width: 45%; }
+
+#reminder_intro {
+  margin-top: 0%;
+  margin-right: -30vw; }
 
 #momkit_intro {
   margin-top: 15%;
@@ -99,7 +110,7 @@ nav {
     width: 65vw; }
 
 #mofm_intro {
-  margin-left: -29vw; }
+  margin-right: -29vw; }
   #mofm_intro img {
     width: 50vw; }
 
@@ -172,14 +183,23 @@ nav {
 
 #about {
   background-image: url(../assets/about_bg.jpg);
-  background-size: cover; }
-
-.about .text {
-  padding: 3%;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white; }
-  .about .text h3 {
-    color: #FFDE7D; }
+  background-size: cover;
+  text-align: center; }
+  #about .text {
+    text-align: center;
+    padding: 3%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white; }
+    #about .text h3 {
+      color: #FFDE7D; }
+    #about .text .word {
+      text-align: left; }
+    #about .text .btn {
+      border-radius: 50vh;
+      background-color: #29D2E4; }
+      #about .text .btn:hover {
+        background-color: #FFDE7D;
+        color: white; }
 
 .social {
   width: 100%;
@@ -316,15 +336,17 @@ footer {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  margin-left: 20vw; }
+  margin-left: 20%; }
   .bubble p {
     text-align: left;
     width: 45vw;
     height: auto;
-    color: white; }
+    color: white;
+    padding-left: 3%;
+    padding-right: 3%; }
   .bubble:nth-child(odd) {
     opacity: 0.6;
-    margin-left: 40vw; }
+    margin-left: 30%; }
     .bubble:nth-child(odd)::after {
       border-width: 15px 0 15px 15px;
       left: 45vw;
@@ -345,6 +367,12 @@ footer {
   display: none; }
 
 @media screen and (max-width: 991px) {
+  .title h3 {
+    font-size: 3vh; }
+
+  nav {
+    font-szie: 3vh; }
+
   .works .intro {
     height: auto;
     padding: 5%; }
@@ -369,13 +397,13 @@ footer {
     padding-top: 35vh; }
 
   h4 {
-    font-size: 3.5vh; }
+    font-size: 3.5%; }
 
   .text h3 {
-    font-size: 3.5vh; }
+    font-size: 3.5%; }
 
   .btn {
-    font-size: 2vh; }
+    font-size: 3.5%; }
 
   .timeline {
     display: none; }
@@ -391,25 +419,28 @@ footer {
     padding: 20%; }
 
   .title h3 {
-    height: 3.5vh; }
+    font-size: 3.5%; }
 
-  .about .text {
+  #about .text {
     wdith: 80%;
     padding: 10%;
     background-color: rgba(0, 0, 0, 0.8);
     color: white; }
-    .about .text h1 {
+    #about .text h1 {
       font-size: 4vh; }
-    .about .text h3 {
+    #about .text h3 {
       font-size: 3vh;
       color: #FFDE7D; }
-    .about .text h4 {
+    #about .text h4 {
       font-size: 3vh; }
-    .about .text p {
-      font-size: 2.5vh; } }
+    #about .text p {
+      font-size: 2.5vh; }
+
+  .card p {
+    font-size: 2vh; } }
 body {
-  background-color: #333333;
-  color: #333333; }
+  color: #333333;
+  background-color: #f8f4e9; }
 
 .nav {
   background-color: #333333; }
@@ -422,7 +453,7 @@ body {
     background-color: #f8f4e9; }
 
 .mofm {
-  color: white;
+  color: #333333;
   background: url(../assets/mofm_jumbotron.jpg) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
@@ -448,15 +479,13 @@ body {
   width: 75%; }
 
 .title {
-  color: white;
-  background-color: #333333;
+  color: #333333;
   padding-bottom: 3%;
   padding-top: 3%;
   text-align: center; }
 
 .content {
-  text-align: center;
-  padding: 3%; }
+  text-align: center; }
   .content:nth-child(odd) {
     background-color: white; }
   .content:nth-child(even) {
@@ -464,8 +493,11 @@ body {
   .content p {
     width: 80vw;
     padding: 2.5%;
+      padding-left: 12%;
+      padding-right: 12%;
     margin: 0 auto;
-    color: #333333; }
+    color: #333333;
+    text-align: left; }
   .content img {
     width: 40%; }
 
@@ -567,7 +599,7 @@ body {
   .prev .pnword {
     float: right; }
     .prev .pnword > p {
-      color: white;
+      color: #333333;
       opacity: 0.7; }
   .prev svg {
     padding-top: 5%;
@@ -576,10 +608,10 @@ body {
     opacity: 1; }
 
 .next {
-  width: 25%;
+  width: 20%;
   padding: 3%; }
   .next p {
-    color: white;
+    color: #333333;
     opacity: 0.7; }
   .next .pnword {
     text-align: right;
@@ -588,16 +620,19 @@ body {
     padding-top: 5%;
     float: right; }
   .next:hover p {
-    color: white;
+    color: black;
     opacity: 1; }
 
 .left-arrow {
-  fill: white; }
+  fill: #333333; }
 
 .right-arrow {
-  fill: white; }
+  fill: #333333; }
 
 @media screen and (max-width: 991px) {
+  .title h3 {
+    font-size: 3vh; }
+
   .timeline_pic {
     display: block;
     width: 100%; }

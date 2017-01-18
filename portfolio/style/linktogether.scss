@@ -40,6 +40,18 @@ body {
     float: left;
 }
 
+.project_intro {
+    background-color: $linkto-color;
+    h3,
+    .content>p {
+        color: white;
+    }
+}
+
+.design_process {
+    background-color: #FCFCFC;
+}
+
 .mockup {
     img {
         float: right;
@@ -189,6 +201,9 @@ body {
 }
 
 @media screen and (max-width: 991px) {
+    .title h3 {
+        font-size: 3vh;
+    }
     .timeline_pic {
         display: block;
         width: 100%;
@@ -196,6 +211,7 @@ body {
     .timeline_pic img {
         wdith: 100%;
         height: auto;
+        background-blend-mode: multiply;
     }
     .linkto {
         width: 100%;
@@ -215,5 +231,11 @@ body {
                 padding-top: 35vh;
             }
         }
+    }
+    .prev {
+        width: 40%;
+    }
+    .next {
+        width: 35%;
     }
 }

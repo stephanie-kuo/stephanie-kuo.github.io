@@ -26,6 +26,15 @@ a {
 
 h3 {
     letter-spacing: 0.5px;
+    font-size: 3.5vh;
+}
+
+h4 {
+    font-size: 3vh;
+}
+
+.btn {
+    font-size: 2.5vh;
 }
 
 .jumbotron {
@@ -246,15 +255,25 @@ nav {
 #about {
     background-image: url(../assets/about_bg.jpg);
     background-size: cover;
-}
-
-.about {
+    text-align: center;
     .text {
+        text-align: center;
         padding: 3%;
         background-color: rgba(0, 0, 0, 0.8);
         color: white;
         h3 {
             color: #FFDE7D;
+        }
+        .word {
+            text-align: left;
+        }
+        .btn {
+            border-radius: 50vh;
+            background-color: $theme-color;
+            &:hover {
+                background-color: #FFDE7D;
+                color: white;
+            }
         }
     }
 }
@@ -466,9 +485,9 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
-    //        .pic {
-    //        display: none;
-    //    }
+    .title h3 {
+        font-size: 3vh;
+    }
     nav {
         font-szie: 3vh;
     }
@@ -493,37 +512,17 @@ footer {
             margin: 0 auto;
         }
     }
-    //    #linktogether_intro {
-    //        margin-right: 0;
-    //        z-index: 1;
-    //        width: 100%;
-    //        img {
-    //            width: 100%;
-    //        }
-    //    }
-    //    #mofm_intro {
-    //        margin-left: -29vw;
-    //        img {
-    //            width: 50vw;
-    //        }
-    //    }
-    //    #temp_intro {
-    //        margin-top: 15%;
-    //        img {
-    //            width: 21vw;
-    //        }
-    //    }
     .main {
         padding-top: 35vh;
     }
     h4 {
-        font-size: 3.5vh;
+        font-size: 3.5%;
     }
     .text h3 {
-        font-size: 3.5vh;
+        font-size: 3.5%;
     }
     .btn {
-        font-size: 2vh;
+        font-size: 3.5%;
     }
     .timeline {
         display: none;
@@ -542,9 +541,9 @@ footer {
         }
     }
     .title h3 {
-        font-size: 3.5vh;
+        font-size: 3.5%;
     }
-    .about {
+    #about {
         .text {
             wdith: 80%;
             padding: 10%;
