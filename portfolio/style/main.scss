@@ -5,10 +5,12 @@ $darker-color: #13829B;
 $ctr-color:#13829B;
 .hideme {
     opacity: 0;
+    -moz-opacity: 0;
 }
 
 .visible {
     opacity: 1;
+    -moz-opacity: 1.0;
 }
 
 .icon-bar p {
@@ -269,9 +271,10 @@ nav {
         }
         .btn {
             border-radius: 50vh;
-            background-color: $theme-color;
+            background-color: #FFDE7D;
+            color: darkslategray;
             &:hover {
-                background-color: #FFDE7D;
+                background-color: $theme-color;
                 color: white;
             }
         }
@@ -422,7 +425,7 @@ footer {
         float: left;
         width: 23vh;
         transform: rotate(-45deg);
-        font: bold 10vw;
+        font: bold 50vw;
         letter-spacing: 0.5px;
         &::before {
             content: "";
@@ -485,11 +488,14 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
-    .title h3 {
+    p {
+        font-size: 2vh;
+    }
+    .title .text h3 {
         font-size: 3vh;
     }
-    nav {
-        font-szie: 3vh;
+    .nav a {
+        font-size: 1.2vh;
     }
     .works .intro {
         height: auto;
@@ -516,13 +522,13 @@ footer {
         padding-top: 35vh;
     }
     h4 {
-        font-size: 3.5%;
+        font-size: 3vh;
     }
     .text h3 {
-        font-size: 3.5%;
+        font-size: 2vh;
     }
     .btn {
-        font-size: 3.5%;
+        font-size: 2vh;
     }
     .timeline {
         display: none;
@@ -541,7 +547,10 @@ footer {
         }
     }
     .title h3 {
-        font-size: 3.5%;
+        font-size: 3vh;
+    }
+    .content p {
+        font-size: 2vh;
     }
     #about {
         .text {
@@ -560,13 +569,8 @@ footer {
                 font-size: 3vh;
             }
             p {
-                font-size: 2.5vh;
+                font-size: 2vh;
             }
-        }
-    }
-    .card {
-        p {
-            font-size: 2vh;
         }
     }
 }

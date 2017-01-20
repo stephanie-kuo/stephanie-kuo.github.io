@@ -276,6 +276,9 @@ nav {
 }
 
 @media screen and (max-width: 991px) {
+    p {
+        font-size: 2vh;
+    }
     .title h3 {
         font-size: 3vh;
     }

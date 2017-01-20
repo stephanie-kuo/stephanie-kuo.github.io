@@ -1,9 +1,11 @@
 @import url(animate.css);
 .hideme {
-  opacity: 0; }
+  opacity: 0;
+  -moz-opacity: 0; }
 
 .visible {
-  opacity: 1; }
+  opacity: 1;
+  -moz-opacity: 1.0; }
 
 .icon-bar p {
   font-size: 2vh; }
@@ -196,9 +198,10 @@ nav {
       text-align: left; }
     #about .text .btn {
       border-radius: 50vh;
-      background-color: #29D2E4; }
+      background-color: #FFDE7D;
+      color: darkslategray; }
       #about .text .btn:hover {
-        background-color: #FFDE7D;
+        background-color: #29D2E4;
         color: white; }
 
 .social {
@@ -314,7 +317,7 @@ footer {
     float: left;
     width: 23vh;
     transform: rotate(-45deg);
-    font: bold 10vw;
+    font: bold 50vw;
     letter-spacing: 0.5px; }
     .timeline li::before {
       content: "";
@@ -367,11 +370,14 @@ footer {
   display: none; }
 
 @media screen and (max-width: 991px) {
-  .title h3 {
+  p {
+    font-size: 2vh; }
+
+  .title .text h3 {
     font-size: 3vh; }
 
-  nav {
-    font-szie: 3vh; }
+  .nav a {
+    font-size: 1.2vh; }
 
   .works .intro {
     height: auto;
@@ -397,13 +403,13 @@ footer {
     padding-top: 35vh; }
 
   h4 {
-    font-size: 3.5%; }
+    font-size: 3vh; }
 
   .text h3 {
-    font-size: 3.5%; }
+    font-size: 2vh; }
 
   .btn {
-    font-size: 3.5%; }
+    font-size: 2vh; }
 
   .timeline {
     display: none; }
@@ -419,7 +425,10 @@ footer {
     padding: 20%; }
 
   .title h3 {
-    font-size: 3.5%; }
+    font-size: 3vh; }
+
+  .content p {
+    font-size: 2vh; }
 
   #about .text {
     wdith: 80%;
@@ -434,10 +443,7 @@ footer {
     #about .text h4 {
       font-size: 3vh; }
     #about .text p {
-      font-size: 2.5vh; }
-
-  .card p {
-    font-size: 2vh; } }
+      font-size: 2vh; } }
 body {
   color: #333333;
   background-color: #f8f4e9; }
@@ -630,6 +636,9 @@ body {
   fill: #333333; }
 
 @media screen and (max-width: 991px) {
+  .design_process .content img {
+    width: 90%; }
+
   .title h3 {
     font-size: 3vh; }
 
