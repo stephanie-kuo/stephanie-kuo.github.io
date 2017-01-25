@@ -376,6 +376,11 @@ footer {
   .title .text h3 {
     font-size: 3vh; }
 
+  .main {
+    background-size: auto 100%;
+    max-width: 1080px;
+    max-height: 1920px; }
+
   .nav a {
     font-size: 1.2vh; }
 
@@ -654,8 +659,6 @@ body {
   .timeline_pic {
     display: block;
     width: 100%; }
-    .timeline_pic img {
-      width: 100%; }
 
   .linkto {
     width: 100%; }
