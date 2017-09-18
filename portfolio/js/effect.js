@@ -53,4 +53,16 @@ $(document).ready(function () {
         offset: 50
     });
     $('.content .card').addClass("visible");
+    $("#graphic").hide();
+    $(".loadmore").click(function () {
+        $(".loadmore").hide();
+        $("#graphic").show(600);
+    });
+    $(".showless").click(function () {
+        $(".loadmore").show(600);
+        $("#graphic").hide(600);
+        $('html, body').animate({
+            scrollTop: $('#graphics').offset().top
+        }, 600);
+    });
 });

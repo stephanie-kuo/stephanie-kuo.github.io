@@ -4,10 +4,6 @@
     <meta charset="UTF-8">
     <link rel="icon" href="assets/navicon.png">
     <title>MomKit | Project</title>
-    <!--bootstrap-->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
-    <script src="bootstrap/js/bootstrap.js"></script>
     <!--css-->
     <link rel="stylesheet" href="style/momkit.css">
     <link rel="stylesheet" href="style/animate.css" />
@@ -16,6 +12,12 @@
 /jquery/1.4.0/jquery.min.js"></script>
     <script type='text/javascript' src='js/effect.js'></script>
     <script type='text/javascript' src="js/viewportchecker.js"></script>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400, 700, 800" rel="stylesheet">
 </head>
 
 <body>
@@ -35,12 +37,41 @@
         </div>
 
     </div>
+    <div class="project_detail">
+        <div class="detail">
+            <h4>My Role</h4>
+            <p>Interaction Design, Visual Design</p>
+        </div>
+        <div class="detail">
+            <h4>Skills</h4>
+            <p>Wireframe, Prototype, User Testing, Sketch, Illustrator, Photoshop, InVision</p>
+        </div>
+        <div class="detail_s">
+            <h4>Team Size</h4>
+            <p>4 People</p>
+            <br>
+        </div>
+        <div class="detail_s">
+            <h4>Time Period</h4>
+            <p>Sep. 2016 - Dec. 2016</p>
+            <br>
+        </div>
+    </div>
     <div class="project_intro">
         <div class="title center">
             <h3>What is MomKit</h3>
         </div>
         <div class="content">
             <p>MomKit is a mobile health app that teaches parents evidence-based breastfeeding techniques with Pixar-style animations. With MomKit, mothers can learn how to alleviate, improve, or prevent the most common breastfeeding problems, from breast pain and engorgement to low milk production and trouble pumping.</p>
+        </div>
+    </div>
+    <div class="why">
+        <div class="title center">
+            <h3>What the problem is</h3>
+            <h4>2 New Features: Breastfeeding Dictionary, Goal Setting</h4>
+        </div>
+        <div class="content">
+            <p>For our client, we worked on 2 different features of their application over the course of 4 months. <br><br><b>1. Breastfeeding Dictionary:</b><br>The Breastfeeding Dictionary feature is integrated into the application and allows mothers to learn more about their body and biology via lactation term definitions at a 6th grade reading level and animated physiology tutorials. <br><br><b>2. Goal Setting Workflow:</b><br>The Goal Setting Workflow needs to be developed so that LGC can answer the question: “How do mothers set goals for themselves while using the application?” An example of a goal is: “I want to breastfeed my baby for 6 months.”</p>
         </div>
     </div>
     <div class="design_process">
@@ -61,7 +92,6 @@
             <div class="timeline_pic">
                 <img src="assets/momkit_timeline.png" alt=" " style="width: 100%;">
             </div>
-            <p>For our client, we worked on 2 different features of their application over the course of 4 months. <br><br>1. The Breastfeeding Dictionary feature is integrated into the application and allows mothers to learn more about their body and biology via lactation term definitions at a 6th grade reading level and animated physiology tutorials. <br><br>2. The Goal Setting Workflow needs to be developed so that LGC can answer the question: “How do mothers set goals for themselves while using the application?” An example of a goal is: “I want to breastfeed my baby for 6 months.”</p>
         </div>
     </div>
     <div class="interview ">
@@ -95,7 +125,6 @@
     <div class="persona ">
         <div class="title center ">
             <h3>Persona</h3>
-            <p>The target users are recent mothers or pregnant women who would soon be mothers. </p>
         </div>
         <div class="content col-sm-12 ">
             <div class="card col-md-5 col-sm-12 ">
@@ -248,11 +277,11 @@
 
     <div class="part " id="dictionary">
         <div class="title center ">
-            <h3>Function 1 - Dictionary</h3>
+            <h3>Feature 1 - Breastfeeding Dictionary</h3>
         </div>
         <div class="content ">
             <p>The Breastfeeding Dictionary feature is integrated into the application and allows mothers to learn more about their body and biology via lactation term definitions at a 6th grade reading level and animated physiology tutorials. </p>
-            <p>The features we thought would be useful in this scenario were: <br><br>A main search bar <br> Option to go back to recent searches<br> Filter feature to look at words that lie under the same theme
+            <p>The features we thought would be useful in this scenario were: <br><br>- A main search bar <br>- Option to go back to recent searches<br>- Filter feature to look at words that lie under the same theme
             </p>
             <h3>Wireframe</h3>
 
@@ -262,10 +291,10 @@
             <h3>Mid-Fi Prototype</h3>
             <img src="assets/momkit_prototype2.png " alt=" ">
             <h3>Interactive Prototype</h3>
-            <iframe src="https://marvelapp.com/31fg3h1?emb=1 " width="452 " height="901 " allowTransparency="true " frameborder="0 "></iframe>
+            <iframe src="https://marvelapp.com/31fg3h1?emb=1 " width="100%" height="100%" allowTransparency="true " frameborder="0 "></iframe>
             <h3>User Testing</h3>
             <h4>Task</h4>
-            <p>Searching for a word<br> Sharing the word and related massage techniques<br> Filtering terms<br> Looking for favorited terms<br>
+            <p>- Searching for a word<br>- Sharing the word and related massage techniques<br>- Filtering terms<br> - Looking for favorited terms<br>
             </p>
             <h4>Findings</h4>
             <p>A. Filter Function<br><br>When asked to search for all terms related to “First latch” the user did not think of filtering. Also, the filter icon wasn’t prominent enough to catch their attention. When told about the filter function, she immediately said “the filter feature totally makes sense to me”.</p>
@@ -304,13 +333,14 @@
 
             <div class="text ">
                 <p>3. Use tiles of different filter themes rather than a list of words</p>
+                <img src="assets/FilterFunction.jpeg" alt="">
             </div>
             <p>We suggested that the LGC team could use the same user testing script we used for user testing to test these designs, and make a decision as to which one is most intuitive. </p>
         </div>
     </div>
     <div class="part " id="goal_setting ">
         <div class="title center ">
-            <h3>Function 2 - Goal Setting</h3>
+            <h3>Feature 2 - Goal Setting</h3>
         </div>
         <div class="content ">
             <p>The "Goal Setting " function can help moms better understand their current status and be more willing to explore and use the application. Also, the user can customize some aspects of the goal for example the time period of the goal. </p>
@@ -322,7 +352,7 @@
             <iframe src="https://marvelapp.com/4ej616j?emb=1 " width="100% " height="100% " allowTransparency="true " frameborder="0 "></iframe>
             <h3>User Testing</h3>
             <p>We created a user testing script for the goal framing workflow, and handed it over to the LGC team so they could perform testing and validate the design. The things we would like to test on are: </p>
-            <p>Navigating to goal setting page<br>Adding a new goal<br>Checking how many videos the user has already watched for a goal<br>Deleting a goal</p>
+            <p>- Navigating to goal setting page<br>- Adding a new goal<br>- Checking how many videos the user has already watched for a goal<br>- Deleting a goal</p>
             <p>One suggestion we had for the design was to give the user the ability to add a “Personalized” goal as against a predefined goal. We included some follow up questions in the testing script to validate if adding a personalized goal is a real world scenario. </p>
         </div>
     </div>

@@ -3,6 +3,7 @@ $theme-color:#29D2E4;
 $sub-color:white;
 $darker-color: #13829B;
 $ctr-color:#13829B;
+$totalColumns: 12;
 .hideme {
     opacity: 0;
     -moz-opacity: 0;
@@ -13,8 +14,21 @@ $ctr-color:#13829B;
     -moz-opacity: 1.0;
 }
 
+.aleft {
+    //    float: left;
+}
+
+.aright {
+    text-align: right;
+    float: right;
+}
+
 .icon-bar p {
     font-size: 2vh;
+}
+
+h1 {
+    font-weight: bolder;
 }
 
 p {
@@ -29,10 +43,12 @@ a {
 h3 {
     letter-spacing: 0.5px;
     font-size: 3.5vh;
+    font-weight: bolder;
 }
 
 h4 {
     font-size: 3vh;
+    text-shadow: rgba(0, 0, 0, 0);
 }
 
 .btn {
@@ -41,6 +57,7 @@ h4 {
 
 .jumbotron {
     height: 100vh;
+    text-align: center;
 }
 
 body {
@@ -55,7 +72,6 @@ nav {
     position: relative;
     z-index: 1;
     display: inline-block;
-    //    background-color: rgba(41, 210, 228, 0.7);
     background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -143,7 +159,7 @@ nav {
 }
 
 #momkit_intro {
-    margin-top: 15%;
+    margin-top: 20%;
     z-index: 1;
     img {
         width: 21vw;
@@ -189,6 +205,10 @@ nav {
     }
 }
 
+.ui {
+    background-color: gray;
+}
+
 //Graphic
 #graphics {
     display: inline-block;
@@ -199,7 +219,7 @@ nav {
 }
 
 #graphics img {
-    max-width: 100%;
+    //        max-width: 100%;
     height: auto;
     display: inline-block;
     background-color: none;
@@ -208,7 +228,6 @@ nav {
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
     text-align: left;
     padding: 0px;
-    z-index: -1;
     opacity: 1;
     box-sizing: border-box;
     transition: all 0.6s ease-in-out;
@@ -274,8 +293,8 @@ nav {
             background-color: #FFDE7D;
             color: darkslategray;
             &:hover {
-                background-color: $theme-color;
-                color: white;
+                background-color: #E5C66E;
+                color: black;
             }
         }
     }
@@ -487,6 +506,25 @@ footer {
     display: none;
 }
 
+.project_detail {
+    background-color: #FCFCFC;
+    color: gray;
+    .detail {
+        background-color: #FCFCFC;
+        height: 25vh;
+        float: left;
+        width: 30%;
+        padding: 3%;
+    }
+    .detail_s {
+        height: 25vh;
+        float: left;
+        width: 20%;
+        padding: 3%;
+        background-color: #FCFCFC;
+    }
+}
+
 @media screen and (max-width: 991px) {
     p {
         font-size: 2vh;
@@ -578,6 +616,16 @@ footer {
             p {
                 font-size: 2vh;
             }
+        }
+    }
+    .project_detail {
+        .detail {
+            padding: 2%;
+            width: 50%;
+        }
+        .detail_s {
+            padding: 2%;
+            width: 50%;
         }
     }
 }

@@ -7,8 +7,15 @@
   opacity: 1;
   -moz-opacity: 1.0; }
 
+.aright {
+  text-align: right;
+  float: right; }
+
 .icon-bar p {
   font-size: 2vh; }
+
+h1 {
+  font-weight: bolder; }
 
 p {
   letter-spacing: 0.5px;
@@ -19,16 +26,19 @@ a {
 
 h3 {
   letter-spacing: 0.5px;
-  font-size: 3.5vh; }
+  font-size: 3.5vh;
+  font-weight: bolder; }
 
 h4 {
-  font-size: 3vh; }
+  font-size: 3vh;
+  text-shadow: transparent; }
 
 .btn {
   font-size: 2.5vh; }
 
 .jumbotron {
-  height: 100vh; }
+  height: 100vh;
+  text-align: center; }
 
 body {
   background-color: #29D2E4; }
@@ -100,7 +110,7 @@ nav {
   margin-right: -30vw; }
 
 #momkit_intro {
-  margin-top: 15%;
+  margin-top: 20%;
   z-index: 1; }
   #momkit_intro img {
     width: 21vw; }
@@ -134,6 +144,9 @@ nav {
     background-color: #13829B;
     color: white; }
 
+.ui {
+  background-color: gray; }
+
 #graphics {
   display: inline-block;
   margin: 0 auto;
@@ -142,7 +155,6 @@ nav {
   width: 100%; }
 
 #graphics img {
-  max-width: 100%;
   height: auto;
   display: inline-block;
   background-color: none;
@@ -151,7 +163,6 @@ nav {
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
   text-align: left;
   padding: 0px;
-  z-index: -1;
   opacity: 1;
   box-sizing: border-box;
   transition: all 0.6s ease-in-out; }
@@ -201,8 +212,8 @@ nav {
       background-color: #FFDE7D;
       color: darkslategray; }
       #about .text .btn:hover {
-        background-color: #29D2E4;
-        color: white; }
+        background-color: #E5C66E;
+        color: black; }
 
 .social {
   width: 100%;
@@ -369,12 +380,33 @@ footer {
 .timeline_pic {
   display: none; }
 
+.project_detail {
+  background-color: #FCFCFC;
+  color: gray; }
+  .project_detail .detail {
+    background-color: #FCFCFC;
+    height: 25vh;
+    float: left;
+    width: 30%;
+    padding: 3%; }
+  .project_detail .detail_s {
+    height: 25vh;
+    float: left;
+    width: 20%;
+    padding: 3%;
+    background-color: #FCFCFC; }
+
 @media screen and (max-width: 991px) {
   p {
     font-size: 2vh; }
 
   .title .text h3 {
     font-size: 3vh; }
+
+  .main {
+    background-size: auto 100%;
+    max-width: 1080px;
+    max-height: 1920px; }
 
   .nav a {
     font-size: 1.2vh; }
@@ -443,12 +475,20 @@ footer {
     #about .text h4 {
       font-size: 3vh; }
     #about .text p {
-      font-size: 2vh; } }
+      font-size: 2vh; }
+
+  .project_detail .detail {
+    padding: 2%;
+    width: 50%; }
+  .project_detail .detail_s {
+    padding: 2%;
+    width: 50%; } }
 body {
   background-color: white; }
 
 .nav {
-  background-color: #5DB446; }
+  background-color: #5DB446;
+  z-index: 1; }
 
 .navbar-nav {
   float: left;
@@ -464,6 +504,9 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 5%;
     padding-top: 15em;
     padding-bottom: 15em; }
@@ -473,6 +516,12 @@ body {
 .logo {
   float: left; }
 
+.mockup img {
+  float: right;
+  margin-right: -25%;
+  z-index: -1;
+  width: 100%; }
+
 .project_intro {
   background-color: #5DB446; }
   .project_intro h3,
@@ -481,13 +530,6 @@ body {
 
 .design_process {
   background-color: #FCFCFC; }
-
-.mockup img {
-  float: right;
-  margin-top: -20vh;
-  margin-right: -25%;
-  z-index: -1;
-  width: 75%; }
 
 .title {
   color: #5DB446;
@@ -513,12 +555,14 @@ body {
     margin: 0 auto; }
 
 .prev {
-  width: 17%;
-  padding: 3%; }
+  padding: 5%;
+  width: 50%; }
   .prev a {
     color: #5DB446; }
   .prev .pnword {
-    float: right; }
+    padding-top: 3.5%;
+    padding-left: 5%;
+    float: left; }
     .prev .pnword > p {
       color: gray; }
   .prev svg {
@@ -528,13 +572,15 @@ body {
     color: #5DB446; }
 
 .next {
-  width: 17%;
-  padding: 3%; }
+  padding: 5%;
+  width: 50%; }
   .next a {
     color: gray; }
   .next .pnword {
+    padding-top: 3.5%;
+    padding-right: 5%;
     text-align: right;
-    float: left; }
+    float: right; }
   .next svg {
     padding-top: 5%;
     float: right; }
@@ -589,15 +635,18 @@ body {
 .timeline_pic {
   display: none; }
 
-@media screen and (max-width: 991px) {
-  p {
-    font-size: 2vh; }
-
+@media screen and (min-width: 321px) and (max-width: 1024px) {
   .content img {
-    width: 90%; }
+    width: 75%; }
+  .content p {
+    padding-left: 3%;
+    padding-right: 3%; }
 
   .title h3 {
     font-size: 3vh; }
+
+  .timeline {
+    display: none; }
 
   .timeline_pic {
     display: block;
@@ -617,13 +666,10 @@ body {
         margin: 0 auto; }
     .linkto .logo img {
       float: none;
-      margin: 0 auto;
-      padding-top: 35vh; }
+      margin: 0 auto; }
 
-  .prev {
-    width: 40%; }
-
+  .prev,
   .next {
-    width: 35%; } }
+    width: 50%; } }
 
 /*# sourceMappingURL=linktogether.css.map */

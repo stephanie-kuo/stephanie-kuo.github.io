@@ -1,8 +1,6 @@
 @import "main";
 $reminder-color: #59C6DB;
 $reminder-darker: #30A9B2;
-$linkto-color: #5DB446;
-$linkto-darker: #4B8C38;
 body {
     background-color: white;
 }
@@ -29,6 +27,9 @@ body {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 5% {
         top: 15em;
         left: 15%;
@@ -44,12 +45,10 @@ body {
 }
 
 .mockup {
-    img {
-        float: right;
-        margin-top: -15vh;
-        z-index: -1;
-        width: 50%;
-    }
+    float: right;
+    //    margin-top: -10vw;
+    //    z-index: -1;
+    //    width: 50%;
 }
 
 .title {
@@ -90,8 +89,7 @@ body {
 }
 
 .prototype,
-.final,
-.design_process {
+.final {
     img {
         width: 20%;
         margin: 1%;
@@ -99,38 +97,17 @@ body {
     background-color: #FCFCFC;
 }
 
-.prev {
-    width: 17%;
-    padding: 3%;
-    a {
-        color: $linkto-color;
-    }
-    .pnword {
-        float: right;
-        &>p {
-            color: gray;
-        }
-    }
-    svg {
-        padding-top: 5%;
-        float: left;
-    }
-    &:hover {
-        p {
-            color: $linkto-color;
-        }
-    }
-}
-
 .next {
-    width: 20%;
-    padding: 3%;
+    width: 50%;
+    padding: 5%;
     a {
         color: gray;
     }
     .pnword {
+        padding-top: 4%;
+        padding-right: 5%;
         text-align: right;
-        float: left;
+        float: right;
     }
     svg {
         padding-top: 5%;
@@ -266,40 +243,53 @@ body {
     }
 }
 
-@media screen and (max-width: 991px) {
-    p {
-        font-size: 2vh;
-    }
+@media screen and (min-width: 321px) and (max-width: 1024px) {
     .title h3 {
         font-size: 3vh;
+    }
+    .timeline {
+        display: none;
     }
     .timeline_pic {
         display: block;
         width: 100%;
     }
     .linkto {
+        float: left;
+    }
+    .mockup {
         width: 100%;
-        .mockup {
+        img {
+            float: none;
+            position: relative;
+            margin: 0 auto;
             width: 100%;
-            img {
-                float: none;
-                position: relative;
-                margin: 0 auto;
-            }
         }
-        .logo {
-            img {
-                float: none;
-                margin: 0 auto;
-                padding-top: 35vh;
-            }
+    }
+    .logo {
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+    }
+    .content {
+        p {
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+        img {
+            width: 75%;
         }
     }
     .prototype,
     .final {
         img {
-            width: 40%;
+            width: 55%;
             margin: 1%;
+        }
+    }
+    .design_process {
+        img {
+            width: 100%;
         }
     }
     .end {
@@ -307,28 +297,31 @@ body {
     }
     .next {
         width: 50%;
-        padding: 3%;
-        a {
-            color: gray;
-        }
-        .pnword {
-            text-align: right;
-            float: left;
-        }
-        svg {
-            padding-top: 5%;
-            float: right;
-        }
-        &:hover {
-            p {
-                color: $reminder-color;
-            }
-        }
     }
     .cardtext li {
         font-size: 2vh;
     }
     .persona .content .card img {
         width: 15vh;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .logo {
+        float: left;
+    }
+    .mockup {
+        float: right;
+        width: 70%;
+        text-align: right;
+        img {
+            margin-top: 10vw;
+            width: 60%;
+        }
+    }
+    .next {
+        .pnword {
+            padding-top: 1vw;
+        }
     }
 }

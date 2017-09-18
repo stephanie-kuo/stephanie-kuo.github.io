@@ -23,13 +23,15 @@ nav {
 }
 
 .momkit {
-    color: white;
     background: url(../assets/care.jpeg) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 5% {
         top: 15em;
         bottom: 15em;
@@ -42,16 +44,23 @@ nav {
 
 .momkit_logo {
     float: left;
+    img {
+        width: 100%;
+    }
 }
 
 .momkit_mockup {
     float: right;
-    margin-top: -20vh;
-    z-index: -1;
+    margin-top: 20vw;
+    z-index: 1;
+    img {
+        float: right;
+        width: 60%;
+    }
 }
 
 .title {
-    color: white;
+    color: $momkit-color;
     padding-bottom: 3%;
     padding-top: 3%;
     text-align: center;
@@ -93,7 +102,7 @@ nav {
         margin: 3%;
     }
     img {
-        width: 90%;
+        width: 75%;
         mix-blend-mode: multiply;
     }
     .text {
@@ -137,14 +146,15 @@ nav {
         background-color: white;
         box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
         padding: 5vh;
-        margin: 2.5%;
+        margin: 2%;
         cursor: default;
+        float: left;
         li {
             list-style-type: circle;
             margin-left: 1em;
         }
         img {
-            width: 22vh;
+            width: 30%;
             //            float: left;
             margin: 0 auto;
         }
@@ -221,13 +231,16 @@ nav {
 }
 
 .prev {
-    width: 20%;
+    width: 50%;
     padding: 3%;
+    background-color: $momkit-color;
     a {
         color: white;
     }
     .pnword {
-        float: right;
+        padding-top: 4%;
+        padding-left: 5%;
+        float: left;
         &>p {
             color: white;
             opacity: 0.7;
@@ -245,15 +258,25 @@ nav {
 }
 
 .next {
-    width: 15%;
+    width: 50%;
     padding: 3%;
+    background-color: $momkit-color;
+    a {
+        color: white;
+    }
     p {
         color: white;
         opacity: 0.7;
     }
     .pnword {
         text-align: right;
-        float: left;
+        float: right;
+        padding-top: 3.5%;
+        padding-right: 5%;
+        &>p {
+            color: white;
+            opacity: 0.7;
+        }
     }
     svg {
         padding-top: 5%;
@@ -261,7 +284,6 @@ nav {
     }
     &:hover {
         p {
-            color: white;
             opacity: 1;
         }
     }
@@ -275,30 +297,35 @@ nav {
     fill: white;
 }
 
-@media screen and (max-width: 991px) {
-    p {
-        font-size: 2vh;
-    }
+@media screen and (min-width: 321px) and (max-width: 1024px) {
     .title h3 {
         font-size: 3vh;
     }
     .momkit {
-        padding-top: 80%;
         .momkit_mockup {
             float: none;
             margin: 0 auto;
             width: 100%;
-            padding-top: 60%;
-            padding-left: 50%;
+            margin-top: 75vh;
             img {
-                width: 100%;
+                width: 80%;
                 margin: 0 auto;
             }
         }
     }
+    .content p {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
     .card {
         li {
             font-size: 2vh;
+        }
+        p {
+            font-size: 2vh;
+        }
+        .text h4 {
+            font-size: 3vh;
         }
     }
     .timeline {
@@ -317,10 +344,10 @@ nav {
             width: 80%;
         }
     }
+    .prev,
     .next {
-        width: 40%;
-    }
-    .prev {
-        width: 50%;
+        .pnword {
+            padding-top: 1vw;
+        }
     }
 }

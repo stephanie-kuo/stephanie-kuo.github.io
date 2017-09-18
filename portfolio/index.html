@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <link rel="icon" href="assets/navicon.png">
     <title>Stephanie Kuo | Portfolio</title>
+    <link rel="stylesheet" href="style/resetCSS.css">
     <!--bootstrap-->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs
 /jquery/1.9.1/jquery.min.js"></script>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <!--lighbox-->
-    <script src="lightbox/dist/js/lightbox.js"></script>
-    <link rel="stylesheet" href="lightbox/dist/css/lightbox.css" />
     <!--css-->
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/animate.css" />
@@ -21,14 +19,31 @@
     <!--js-->
     <script type='text/javascript' src='js/effect.js'></script>
     <script type='text/javascript' src="js/viewportchecker.js"></script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
+        ga('create', 'UA-91084240-1', 'auto');
+        ga('send', 'pageview');
 
-
+    </script>
+    <!--lighbox-->
+    <script src="lightbox/dist/js/lightbox.js"></script>
+    <link rel="stylesheet" href="lightbox/dist/css/lightbox.css" />
 </head>
 
 
 <body>
-    <header>
+    <header meta name="viewport" content="width=device-width, initial-scale=1">
         <nav class="navbar-static-top navbar navbar-fixed-top pull-right" role="navigation">
             <div class="container">
                 <div class="navbar-header">
@@ -51,13 +66,17 @@
     </header>
 
     <div class="col-md-12 col-sm-12 jumbotron main">
+        <br>
+        <br>
+        <br>
+        <h2>I'm Stephanie. I'm a UX Designer. </h2>
+        <h1>I Design for Change</h1>
 
+        <br>
+        <br>
+        <br>
+        <br>
 
-        <h1>Hi ! I'm Stephanie <br>I'm a UX designer</h1>
-        <h2>I'm passionate to create new things ! </h2>
-        <br>
-        <br>
-        <br>
         <a href="#projects" class="center page-scroll">
             <div class="scroll"></div>
         </a>
@@ -88,8 +107,8 @@
         <section class="intro col-md-12 col-sm-12" id="linkto">
 
             <div class="text col-md-6 col-sm-12">
-                <h4>Link Together</h4>
-                <p>Link Together is designed for our client to improve their internal communication under flat corporate structure. With this tool, employees can find the key person easily and enhance the connection between each other.</p>
+                <h4>LinkTogether</h4>
+                <p>LinkTogether is a social network application for organizations with flat corporate structure to improve the communication within the organization. With LinkTogether, employees can identify the key person easily and enhance the connection between each other.</p>
                 <a href="linktogether.html"><button class="btn">View Case Study</button></a>
             </div>
             <div class="pic" id="linktogether_intro">
@@ -137,27 +156,51 @@
     <div class="title" id="graphics">
         <div class="text center" id="graphic_title">
             <h3>Visual Design</h3>
-            <p>Graphic Design | Typography</p>
+            <p>Web Design | Mobile App Design | Graphic Design</p>
         </div>
-        <div class="col-md-12 col-sm-12 gallery center">
+        <div class="col-md-12 col-sm-12 gallery">
             <div class="col-md-4 col-sm-6 box">
-                <a href="assets/tingzhi.jpg" data-lightbox="gallery" data-title="STOP & BLOCK"><img src="assets/tingzhi_tb.jpg" alt=""></a>
+                <a href="assets/thermometer_mockup.jpg" data-lightbox="gallery" data-title="Bluetooth Thermometer"><img src="assets/thermometer_tb.jpg" alt=""></a>
             </div>
             <div class="col-md-4 col-sm-6 box">
-                <a href="assets/starsky2.jpg" data-lightbox="gallery" data-title="Learning"><img src="assets/starsky2_tb.jpg" alt=""></a>
+                <a href="assets/innooz_full.jpg" data-lightbox="gallery" data-title="Browse the site: http://inno-orz.com/expertise-en.html"><img src="assets/innooz.jpg" alt=""></a>
             </div>
             <div class="col-md-4 col-sm-6 box">
-                <a href="assets/undersea2.jpg" data-lightbox="gallery" data-title="The Moment"><img src="assets/undersea_tb.jpg" alt=""></a>
+                <a href="assets/chocolate.jpg" data-lightbox="gallery" data-title="Homepage of Chocolate Company"><img src="assets/chocolate_tb.jpg" alt=""></a>
             </div>
             <div class="col-md-4 col-sm-6 box">
-                <a href="assets/gender_woman-01.jpg" data-lightbox="gallery" data-title="Gender"><img src="assets/gender_woman-01_tb.jpg" alt=""></a>
+                <a href="assets/day18_mockup.jpg" data-lightbox="gallery" data-title="Analytics Chart"><img src="assets/day18_tb.jpg" alt=""></a>
             </div>
             <div class="col-md-4 col-sm-6 box">
-                <a href="assets/typo_raining.jpg" data-lightbox="gallery" data-title="Raining"><img src="assets/typo_raining_tb.jpg" alt=""></a>
+                <a href="assets/day17.jpg" data-lightbox="gallery" data-title="Email Receipt"><img src="assets/day17_tb.jpg" alt=""></a>
             </div>
             <div class="col-md-4 col-sm-6 box">
-                <a href="assets/map.png" data-lightbox="gallery" data-title="Campus Map"><img src="assets/map_tb.jpg" alt=""></a>
+                <a href="assets/day8.jpg" data-lightbox="gallery" data-title="404 Page"><img src="assets/day8_tb.jpg" alt=""></a>
             </div>
+        </div>
+        <button class="btn-link loadmore">Load More</button>
+        <div id="graphic">
+            <div class="col-md-12 col-sm-12 gallery ">
+                <div class="col-md-4 col-sm-6 box">
+                    <a href="assets/dreaming.jpg" data-lightbox="gallery" data-title="Dreaming App"><img src="assets/dreaming_tb.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 box">
+                    <a href="assets/day2.jpg" data-lightbox="gallery" data-title="Dreaming App"><img src="assets/day2_tb.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 box">
+                    <a href="assets/day11.jpg" data-lightbox="gallery" data-title="Dreaming App"><img src="assets/day11_tb.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 box">
+                    <a href="assets/tingzhi.jpg" data-lightbox="gallery" data-title="STOP & BLOCK"><img src="assets/tingzhi_tb.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 box">
+                    <a href="assets/starsky2.jpg" data-lightbox="gallery" data-title="Learning"><img src="assets/starsky2_tb.jpg" alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-6 box">
+                    <a href="assets/undersea2.jpg" data-lightbox="gallery" data-title="The Moment"><img src="assets/undersea_tb.jpg" alt=""></a>
+                </div>
+            </div>
+            <p class="btn-link showless">Show Less</p>
         </div>
     </div>
     <div class="title" id="about_title">
@@ -170,17 +213,21 @@
 
             <div class="word">
                 <h1>Stephanie Kuo</h1>
-                <p>User Experience Designer</p>
+                <p>UX Designer / Interaction Designer</p>
                 <h3>Work Experience</h3>
-                <h4>03.2016-08.2016 <span style="font-weight: bold">Innoorz Co., Ltd</span></h4>
-                <p>Visual Designer</p>
-                <h4>06.2013-04.2015 <span style="font-weight: bold">Morrison Express Co., Ltd.</span></h4>
-                <p>Sales Representative</p>
+                <h4><span style="font-weight: bold">INNO-OZ Co., Ltd</span></h4>
+                <p class="aright">Mar. 2016 - Aug. 2016</p>
+                <p> Visual Designer</p>
+                <h4> <span style="font-weight: bold">Morrison Express Co., Ltd.</span></h4>
+                <p class="aright">Jun. 2013 - Apr. 2015</p>
+                <p>Customer Service</p>
                 <h3>Education</h3>
-                <h4>08.2016-Present <span style="font-weight: bold">  University of Michigan</span></h4>
-                <p>M.S. in Information <br> Human Computer Interaction Specialization</p>
-                <h4>09.2008-06.2012 <span style="font-weight: bold">  National Tsing Hua University</span></h4>
-                <p>B.A. in College of Humanity and Social Sciences</p>
+                <h4><span style="font-weight: bold">  University of Michigan</span></h4>
+                <p class="aright">Apr. 2018</p>
+                <p>M.S. in Human Computer Interaction</p>
+                <h4><span style="font-weight: bold">  National Tsing Hua University</span></h4>
+                <p class="aright">Jun. 2012</p>
+                <p>B.A. in Sociology and Anthropology</p>
                 <h3>Skills</h3>
                 <p>Photoshop / Illustrator / Sketch / HTML / CSS / javascript</p>
             </div>
